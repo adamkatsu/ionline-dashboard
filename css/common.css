@@ -24,30 +24,30 @@ html,div,ul,p,h1,h2,h3,h4,h5,h6,td,input{
     margin: 0 auto;
 }
 .tool{
-    width: 960px;
-    height: 70px;
+    width: 100%;
+    background-color:#4D4D4F;
+    height: fit-content;
     margin: 0 auto;
     position: relative;
 }
 .header{
     width: 100%;
-    height: 70px;
-    margin: 0 auto;
     position: relative;
 }
 .common_header{
-    width: 960px;
-    margin: 64px auto 0px;
-    height: 60px;
-    background: rgb(14,100,142);
+    width: 100%;
+    margin: auto;
+    background: #ffffff;
     position: relative;
 }
 .logo{
-    position: absolute;
-    top: -60px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    padding: 16px 24px;
 }
 .logo img{
-    height: 60px;
+    width: 120px;
 }
 .header_jb{
     width: 100%;
@@ -67,7 +67,7 @@ html,div,ul,p,h1,h2,h3,h4,h5,h6,td,input{
 }
 .bt_home a,.bt_shortmessage a,.bt_settings a{
     text-decoration: none;
-    color: black;
+    color: #A6A6A7;
 }
 .bt_logout  a{
     text-decoration: none;
@@ -94,32 +94,15 @@ html,div,ul,p,h1,h2,h3,h4,h5,h6,td,input{
     height: 30px;
     line-height: 30px;
     cursor: pointer;
-    position: absolute;
+    position: ;
     font-size: 16px;
     right:105px;
     text-align: right;
     z-index: 999;
 }
 
-.bt_home{
-    position: absolute;
-    top: 15px;
-    left: 270px;
-}
-.bt_shortmessage{
-    position: absolute;
-    left: 440px;
-    top: 15px;
-}
-
-.bt_settings{
-    position: absolute;
-    left: 620px;
-    top: 15px;
-}
 .logout{
     text-decoration: none;
-    position: absolute;
 }
 .logout:hover{
     color: rgb(0,173,239);
@@ -131,11 +114,11 @@ html,div,ul,p,h1,h2,h3,h4,h5,h6,td,input{
     position: relative;
     display: block;
     background-color: rgb(14,100,142); */
-    /* position: absolute;
+    /* position: relative;
     right: 0; */
 }
 .info_ul{
-    position: absolute;
+    position: relative;
     display: flex;
     right: 7px;
     top: 32px;
@@ -152,7 +135,7 @@ html,div,ul,p,h1,h2,h3,h4,h5,h6,td,input{
     width: 20px;
     height: 16px;
     display: block;
-    position: absolute;
+    position: relative;
     background: red;
     font-size: 12px;
     text-align: center;
@@ -183,7 +166,7 @@ h1{
 }
 .introduce{
     width: 730px;
-    position: absolute;
+    position: relative;
     left: 180px;
     top: 14px;
 }
@@ -274,20 +257,10 @@ select option{
     font-family: Century Gothic;
 }
 .selectList{
-    border: 1px solid rgb(255,255,255);
-    background: url("../images/selectWhite.png") no-repeat scroll right center transparent;
-    position: absolute;
-    padding-left: 3px;
-    padding-right: 23px;
-    right: 7px;
-    top: 3px;
-    width: 92px;
-    height: 22px;
-    color: #ffffff;
-    z-index: 999;
+    color: #4d4d4f;
 }
 .selectList option{
-    color: #000000;
+    color: #4d4d4f;
 }
 /*-----------------------------子菜单 start-------------------------------*/
 .menu-left{
@@ -415,7 +388,7 @@ select option{
 .copyright{
     width: 600px;
     height: 30px;
-    position: absolute;
+    position: relative;
     text-align: center;
     display: inline-block;
     left: 50%;
@@ -480,7 +453,7 @@ select option{
     width: 340px;
     height: 110px;
     font-size: 13pt;
-    position: absolute;
+    position: relative;
     top: 50%;
     left: 50%;
     margin: -55px 0 0 -170px;

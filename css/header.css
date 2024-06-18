@@ -1,0 +1,82 @@
+@font-face {
+    font-family: monsterrat;
+    src: url("../font/monsterrat.TTF");
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: monsterrat, sans-serif;
+    font-size: 16px;
+}
+.header{
+    width: 100%;
+    position: relative;
+}
+.common_header{
+    width: 100%;
+    margin: auto;
+    background: #ffffff;
+    position: relative;
+}
+.logo{
+    padding: 16px 24px;
+}
+.logo img{
+    width: 120px;
+}
+.selectList{
+    color: #4d4d4f;
+    border: none;
+}
+.tool{
+    width: 100%;
+    background-color:#4D4D4F;
+    position: relative;
+    padding: 16px 24px;
+}
+.header-logo_container {
+    width: 100%;
+    max-width: 1280px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    margin: auto;
+}
+.header-tools_container {
+    width: 100%;
+    max-width: 1280px;
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-end;
+    margin: auto;
+}
+.main-menu {
+    display: flex;
+    flex-direction: row;
+    gap: 100px;
+    margin: auto;
+}
+.main-menu a {
+    color: #A6A6A7;
+    text-decoration: none;
+    font-weight: 500;
+}
+.info {
+    position: absolute;
+}
+.info_ul {
+    display: flex;
+    flex-direction: row;
+    gap: 24px;
+    list-style: none;
+}
+.info_ul li {
+    display :flex;
+    flex-direction: row;
+    gap: 4px;
+}
+.sms_title {
+    color: #ffffff;
+}
