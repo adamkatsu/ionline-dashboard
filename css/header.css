@@ -9,6 +9,7 @@
     box-sizing: border-box;
     font-family: monsterrat, sans-serif;
     font-size: 16px;
+    font-weight: 500;
 }
 .header{
     width: 100%;
@@ -38,7 +39,7 @@
 }
 .header-logo_container {
     width: 100%;
-    max-width: 1280px;
+    max-width: 1392px;
     display: flex;
     flex-direction: row;
     justify-content: space-between;
@@ -46,7 +47,7 @@
 }
 .header-tools_container {
     width: 100%;
-    max-width: 1280px;
+    max-width: 1392px;
     display: flex;
     flex-direction: row;
     justify-content: flex-end;
@@ -61,7 +62,6 @@
 .main-menu a {
     color: #A6A6A7;
     text-decoration: none;
-    font-weight: 500;
 }
 .info {
     position: absolute;
@@ -76,6 +76,9 @@
     display :flex;
     flex-direction: row;
     gap: 4px;
+}
+.info_ul li img {
+    height: 24px;
 }
 .sms_title {
     color: #ffffff;
