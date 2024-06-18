@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html>
+<head lang="en">
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=Edge">
+    <link rel="shortcut icon" href="../images/favicon.ico">
+    <link rel="stylesheet" href="../css/common.css"/>
+    <link rel="stylesheet" href="../css/sipaccount.css"/>
+    <script type="text/javascript" src="../lib/jquery-3.5.1.min.js"></script>
+    <script type="text/javascript" src="../lib/json_parse.js"></script>
+    <script type="text/javascript" src="../lib/json2.js"></script>
+    <script type="text/javascript" src="../js/languagemanage.js"></script>
+    <script type="text/javascript" src="../js/tools.js"></script>	
+    <script type="text/javascript" src="../js/common.js"></script>
+    <script type="text/javascript" src="../js/encryption.js"></script>
+    <script type="text/javascript" src="../js/sipaccount.js"></script>
+    <title></title>
+</head>
+<body>
+<div class="container">
+    <div id="header" class="header clearfix"></div>
+    
+    <div class="content clearfix">
+        <div class="content-left">
+            <div id="menu-left" class="menu-left">
+                <div id="settings"></div>
+            </div>
+        </div>
+        <div class="content-right">
+            <div class="content-box">
+                <div id="main-title" class="main-title">
+                    <h1><script type="text/javascript">getText(str_sip_account);</script></h1>
+                </div>
+                <div class="main-content">
+                    <p><script type="text/javascript">getText(str_sipaccount_note);</script></p>
+                    <!--<div id="sipaccountlist">-->
+                        <form id="sipaccountlistform">
+                            <table id="listtable" cellpadding="0" cellspacing="1" width="650">
+                                <tbody id="listbody">
+                                    <tr id="head">
+                                        <th width="110"><script type="text/javascript">getText(str_user_name);</script></th>
+                                        <th width="110"><script type="text/javascript">getText(str_sip_password);</script></th>
+                                        <th width="120"><script type="text/javascript">getText(str_registration_status);</script></th>
+                                        <th  width="90"><script type="text/javascript">getText(str_sip_options);</script></th>
+                                    </tr>
+                                </tbody>
+                            </table>
+                            <p id="errortips" class="error-tips" style="display: none"></p>
+                            <input id="add" type="button" class="sipaccountadd-btn"/>
+                        </form>
+                    <!--</div>-->
+                </div>
+            </div>
+        </div>
+    </div>
+    <div id="footer" class="footer">
+        <div id="copyright" class="copyright">
+            <span><script type="text/javascript">getText(common_copyright);</script>&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;<a href="/html/Open_Source_Software_Notice.txt"><script type="text/javascript">getText(common_opensource);</script></a></span>
+        </div>
+    </div>
+</div>
+<noscript>
+    <div class="noscript_text">
+        Your browser does not support JavaScript.
+    </div>
+</noscript>
+</body>
+</html>

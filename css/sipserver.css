@@ -1,0 +1,18 @@
+.select-status{
+    width: 162px;
+    font-size: 14px;
+}
+.inputip {
+    width: 150px;
+    height: 27px;
+    padding-left: 10px;
+    font-size:14px;
+    border: 1px solid rgb(68,150,168);
+}
+.sipdes{
+    font-size: 14px;
+    padding-left: 5px;
+}
+.tips{
+    color: red;
+}

@@ -1,0 +1,173 @@
+<!DOCTYPE html>
+<html>
+<head lang="en">
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=Edge">
+    <link rel="shortcut icon" href="../images/favicon.ico">
+    <link rel="stylesheet" href="../css/common.css"/>
+    <link rel="stylesheet" href="../css/home.css"/>
+    <script type="text/javascript" src="../lib/jquery-3.5.1.min.js"></script>
+    <script type="text/javascript" src="../lib/json_parse.js"></script>
+    <script type="text/javascript" src="../lib/json2.js"></script>
+    <script type="text/javascript" src="../js/languagemanage.js"></script>
+    <script type="text/javascript" src="../js/tools.js"></script>
+    <script type="text/javascript" src="../js/common.js"></script>
+    <script type="text/javascript" src="../js/encryption.js"></script>
+    <script type="text/javascript" src="../js/home.js"></script>
+    <title></title>
+</head>
+<body>
+<div class="bigDiv">
+    <div id="header" class="header"></div>
+    <div class="content">
+        <div class="mid1">
+            <div id="internetimg" class="midBig midBigOnfocus" onclick="initInternet()"><img src="../images/menu_internet.png" alt=""/><p><script type="text/javascript">getText(str_home_internetinfo);</script></p></div>
+            <div id="wifiimghome" class="midBig" onclick="initWifi()" ><img src="../images/wireless.png" alt=""/><p><script type="text/javascript">getText(str_home_i232);</script></p></div>
+            <div id="clientimg" class="midBig" onclick="initClients()" ><img src="../images/phone-connection-with-a-boy_v.png" alt=""/><p><script type="text/javascript">getText(str_home_connected_clients)</script></p></div>
+        </div>
+        <div id="internet" class="hide">
+            <div class="mid3">
+                <table class="midDown_internet">
+                    <tr>
+                        <td><script type="text/javascript">getText(str_home_internet_mode+common_colon)</script></td>
+                        <td id="internetMode">Ethernet/Mobile Data</td>
+                    </tr>
+                    <tr>
+                        <td><script type="text/javascript">getText(str_home_network_status+common_colon)</script></td>
+                        <td id="networkStatus"></td>
+                    </tr>
+                    <tr>
+                        <td><script type="text/javascript">getText(str_home_connection_type+common_colon)</script></td>
+                        <td id="connectMode"></td>
+                    </tr>
+                    <tr>
+                        <td><script type="text/javascript">getText(str_home_connection_uptime+common_colon)</script></td>
+                       <!-- X Days X Hours X Mins-->
+                        <td id="connectionUptime"></td>
+                    </tr>
+                    <tr>
+                        <td><script type="text/javascript">getText(str_home_mac_adress+common_colon)</script></td>
+                        <td id="macAdress"></td>
+                    </tr>
+                    <tr>
+                        <td><script type="text/javascript">getText(str_home_ip_address+common_colon)</script></td>
+                        <td id="ipAddress"></td>
+                    </tr>
+                    <tr>
+                        <td><script type="text/javascript">getText(str_home_subnet_mask+common_colon)</script></td>
+                        <td id="subnetMask"></td>
+                    </tr>
+                    <tr>
+                        <td><script type="text/javascript">getText(str_home_default_gateway+common_colon)</script></td>
+                        <td id="defaultGateway"></td>
+                    </tr>
+                    <tr>
+                        <td><script type="text/javascript">getText(str_home_dns1+common_colon)</script></td>
+                        <td id="primaryDNS"></td>
+                    </tr>
+                    <tr>
+                        <td><script type="text/javascript">getText(str_home_dns2+common_colon)</script></td>
+                        <td id="secondaryDNS"></td>
+                    </tr>
+                    <tr class="ipv6hide">
+                        <td><script type="text/javascript">getText(str_home_ipv6_address+common_colon)</script></td>
+                        <td id="ipv6Address"></td>
+                    </tr>
+                    <tr class="ipv6hide">
+                        <td><script type="text/javascript">getText(str_home_ipv6dns1+common_colon)</script></td>
+                        <td id="ipv6primaryDNS"></td>
+                    </tr>
+                    <tr class="ipv6hide">
+                        <td><script type="text/javascript">getText(str_home_ipv6dns2+common_colon)</script></td>
+                        <td id="ipv6secondaryDNS"></td>
+                    </tr>
+                </table>
+            </div>
+        </div>
+        <div id="wifi" class="hide">
+            <div class="mid3">
+                <table class="midDown_i232s">
+                    <tr><th colspan="2"><script type="text/javascript">getText(str_home_wifi24)</script></th></tr>
+                    <tr>
+                        <td><script type="text/javascript">getText(str_home_status+common_colon)</script></td>
+                        <td id="enable24"></td>
+                    </tr>
+                    <tr>
+                        <td><script type="text/javascript">getText(str_home_ssid_name+common_colon)</script></td>
+                        <td><pre id="ssidname24"></pre></td>
+                    </tr>
+                    <tr>
+                        <td><script type="text/javascript">getText(str_home_ssid_password+common_colon)</script></td>
+                        <td><pre id="password24"></pre></td>
+                    </tr>
+                    <tr><th colspan="2"><script type="text/javascript">getText(str_home_ssid_wifi5)</script></th></tr>
+                    <tr>
+                        <td><script type="text/javascript">getText(str_home_status+common_colon)</script></td>
+                        <td id="enable5"></td>
+                    </tr>
+                    <tr>
+                        <td><script type="text/javascript">getText(str_home_ssid_name+common_colon)</script></td>
+                        <td><pre id="ssidname5"></pre></td>
+                    </tr>
+                    <tr>
+                        <td><script type="text/javascript">getText(str_home_ssid_password+common_colon)</script></td>
+                        <td><pre id="password5"></pre></td>
+                    </tr>
+                   <!-- <tr><th><script type="text/javascript">getText(str_home_ipv4_network)</script></th></tr>
+                    <tr>
+                        <td><script type="text/javascript">getText(str_home_mac_adress+common_colon)</script></td>
+                        <td id="mac"></td>
+                    </tr>
+                    <tr>
+                        <td><script type="text/javascript">getText(str_home_router_address+common_colon)</script></td>
+                        <td id="ipadress"></td>
+                    </tr>
+                    <tr>
+                        <td><script type="text/javascript">getText(str_home_subnet_mask+common_colon)</script></td>
+                        <td id="netmask"></td>
+                    </tr>-->
+                </table>
+            </div>
+        </div>
+        <div id="client" class="hide">
+            <div class="mid3">
+                <table id="clients" class="midDown_connected">
+                   <!-- <tr>
+                        <td>
+                            <div class="desktop">
+                                <table>
+                                    <tr><td colspan="2" class="desktopUp">DESKTOP-XXXXXXXX</td></tr>
+                                    <tr class="desktopDown">
+                                        <td>Dell</td>
+                                        <td>XXX.XXX.XXX.XXX</td>
+                                    </tr>
+                                </table>
+                            </div>
+                            <div class="jeremy">
+                                <table>
+                                    <tr><td colspan="2" class="jeremyUp">Jeremy PC</td></tr>
+                                    <tr class="jeremyDown">
+                                        <td>ASUS</td>
+                                        <td>XXX.XXX.XXX.XXX</td>
+                                    </tr>
+                                </table>
+                            </div>
+                        </td>
+                    </tr>-->
+                </table>
+            </div>
+         </div>
+    </div>
+    <div id="footer" class="footer">
+        <div id="copyright" class="copyright">
+            <span><script type="text/javascript">getText(common_copyright);</script>&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;<a href="/html/Open_Source_Software_Notice.txt"><script type="text/javascript">getText(common_opensource);</script></a></span>
+        </div>
+    </div>
+</div>
+<noscript>
+    <div class="noscript_text">
+        Your browser does not support JavaScript.
+    </div>
+</noscript>
+</body>
+</html>

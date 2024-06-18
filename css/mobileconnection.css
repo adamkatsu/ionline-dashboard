@@ -1,0 +1,91 @@
+.select-status {
+    width: 200px;
+    padding-right: 30px;
+}
+.input-status{
+    border: 1px solid rgb(68,150,168);
+    height: 27px;
+    width: 188px;
+    padding-left: 10px;
+}
+.select-profile{
+    width: 200px;
+}
+.tdwidth120{
+    width: 120px;
+    height: 32px;
+    text-align: left;
+}
+.newprofileinput{
+    width: 178px;
+    height: 27px;
+    padding-left: 10px;
+    border: 1px solid rgb(68,150,168);
+}
+.newprofileselect{
+    width: 190px;
+    height: 27px;
+}
+#newprofiledialog{
+    min-width: 400px;
+    width: auto !important;
+    padding: 30px 30px 20px 60px;
+}
+#newprofiledialog table{
+    font-size: 12px;
+    /*font: normal 12px arial,sans-serif;*/
+}
+#newprofile:disabled{
+	background: rgb(255,115,115);
+	border: 1px solid rgb(255,115,115);
+}
+.fontcolorred{
+    color: red;
+}
+.network-select{
+    width: 100px;
+}
+.networktips{
+    color: red;
+}
+.tdwidth40{
+    width: 40px;
+}
+.tdwidth80{
+    width: 80px;
+}
+.tdwidth120{
+    width: 120px;
+}
+.tdwidth60{
+    width: 120px;
+}
+.tdwidth100{
+    width: 100px;
+}
+#networkform td{
+    text-align: center;
+    font-size: 12px;
+    line-height: 30px;
+    /*font: 12px/30px arial, sans-serif;*/
+}
+
+#networkform{
+    min-height: 100px;
+    margin: 40px 50px 30px 50px;
+}
+
+#networkform th{
+    background-color: rgb(191,191,191);
+    text-align: center;
+    font-size: 14px;
+    line-height: 30px;
+    font-weight: bold;
+    /*font: bold 14px/30px arial,sans-serif;*/
+}
+.oddtr{
+    background-color: rgb(240,240,240);
+}
+.eventr{
+    background-color: rgb(221,221,221);
+}

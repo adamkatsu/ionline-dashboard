@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<config>
+    <lang_list>
+        <lang>en_us</lang>
+        <!--<lang>zh_cn</lang>-->
+        <lang>it_it</lang>
+    </lang_list>
+    <lang_help>
+
+    </lang_help>
+</config>

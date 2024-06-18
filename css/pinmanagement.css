@@ -1,0 +1,17 @@
+.select-status {
+    width: 200px;
+    font-size: 14px;
+}
+.input-status {
+    width: 187px;
+    height: 27px;
+    padding-left: 10px;
+    margin-right: 10px;
+    font-size:14px;
+    border: 1px solid rgb(68,150,168);
+}
+.error-tips {
+    color: red;
+}
+
+

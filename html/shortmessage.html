@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html>
+<head lang="en">
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=Edge">
+	<meta name="format-detection" content="telephone=no">
+    <link rel="shortcut icon" href="../images/favicon.ico">
+    <link rel="stylesheet" href="../css/common.css"/>
+    <link rel="stylesheet" href="../css/shortmessage.css"/>
+    <script type="text/javascript" src="../lib/jquery-3.5.1.min.js"></script>
+    <script type="text/javascript" src="../js/languagemanage.js"></script>
+    <script type="text/javascript" src="../lib/json_parse.js"></script>
+    <script type="text/javascript" src="../lib/json2.js"></script>
+    <script type="text/javascript" src="../js/tools.js"></script>
+    <script type="text/javascript" src="../js/common.js"></script>
+    <script type="text/javascript" src="../js/shortmessage.js"></script>
+    <script type="text/javascript" src="../js/smssend.js"></script>
+
+    <title></title>
+</head>
+<body>
+<div id="container" class="container">
+    <div id="header" class="header clearfix"></div>
+    <div id="content" class="content clearfix">
+        <!-- <div class="content-top"></div> -->
+        <div class="content-right">
+            <div class="childmenu">
+                <ul>
+                    <li id="draft-meun" class="sms-menu pointer submenusms" onclick="changeSmsType(0)">
+                        <div><img src="../images/draftbox.png" alt="" id="draftbox_img"/></div>
+                        <span class="sms-menu-str"><script>getText(str_sms_draft);</script></span>
+                    </li>
+                    <li id="outbox-menu" class="sms-menu pointer submenusms" onclick="changeSmsType(2)">
+                        <div><img src="../images/outbox.png" alt="" id="outbox_img"/></div>
+                        <span class="sms-menu-str"><script>getText(str_sms_outbox);</script></span>
+                    </li>
+                    <li id="inbox-menu" class="sms-menu pointer submenusms click" onclick="changeSmsType(1)">
+                        <div><img src="../images/inbox.png" alt="" id="inbox_img"/></div>
+                        <span class="sms-menu-str"><script>getText(str_sms_inbox);</script></span>
+                    </li>
+                </ul>
+            </div>
+            <div class="sms-right">
+                <div id="smssdiv">
+                    <div class="sms-operator">
+                        <span id="boxmessage"></span>
+                        <input id="newmessge_button" type="button" class="conact-btn" value="New Conact" />
+                        <input id="deletemessage_button" type="button"  class="conact-btn" value="Delete"/>
+                        <input id="refreshmessage_button" type="button" class="conact-btn" value="Refresh" />
+                    </div>
+                    <div id="sms_data">
+                        <table border="0" cellpadding="0" cellspacing="0" class="sms_table">
+                        <tr id="smsList_title">
+                            <th width="5%" align="center">
+                                <input type="checkbox" name="checkbox"  id="sms_check_all"/>
+                            </th>
+                            <th  width="23%" >
+                                <label id="phone_number"><script>getText(str_conact_sender);</script></label>
+                            </th>
+                            <th  width="40%" >
+                                <label><script>getText(str_message_content);</script></label>
+                            </th>
+                            <th  width="32%" class="td_pl sms_date_width">
+                                <label><script>getText(str_time);</script></label>
+                            </th>
+                        </tr>
+                    </table>
+                        <table border="0" cellpadding="0" cellspacing="0" class="sms_table sms_page_tools" width="690">
+                            <tr>
+                                <td colspan="4" >
+                                    <div class="sms_pagination" id='sms_pagination'>
+                                <span class="page_tool">
+                                <span class="sms_span">
+                                <a class="pageBegin" id="pageBegin">&nbsp;</a>
+                                </span>
+                                <span class="sms_span">
+                                <a class="prePage" id="prePage">&nbsp;</a>
+                                </span>
+                                <span class="page_num clr_bold_a" id="page_num"></span>
+                                <span class="sms_span">
+                                <a class="nextPage" id="nextPage">&nbsp;</a>
+                                </span>
+                                <span class="sms_span">
+                                <a class="pageLast" id="pageLast">&nbsp;</a>
+                                </span>
+                                </span>
+                                        <span class="page_list">
+                                        <label id="curPage">
+                                        </label>
+                                        <b><script>getText(str_page+common_colon)</script></b>
+                                 </span>
+                                        <input type="text" size="6" maxlength="3" class="input_page" id="jump_page_index"  autocomplete="off"/>
+                                        <script type="text/javascript">create_button(common_go,'jump_page',"sms_go");</script>
+                                    </div>
+                                </td>
+                            </tr>
+                        </table>
+                    </div>
+
+                </div>
+            </div>
+
+        </div>
+
+    </div>
+    <div class="clearfix"></div>
+    <div id="footer" class="footer">
+        <div id="copyright" class="copyright">
+            <span><script type="text/javascript">getText(common_copyright);</script>&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;<a href="/html/Open_Source_Software_Notice.txt"><script type="text/javascript">getText(common_opensource);</script></a></span>
+        </div>
+    </div>
+</div>
+<noscript>
+    <div class="noscript_text">
+        Your browser does not support JavaScript.
+    </div>
+</noscript>
+</body>
+</html>

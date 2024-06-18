@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html>
+<head lang="en">
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=Edge">
+    <link rel="shortcut icon" href="../images/favicon.ico">
+    <link rel="stylesheet" href="../css/common.css"/>
+    <link rel="stylesheet" href="../css/rebootreset.css"/>
+    <script type="text/javascript" src="../lib/jquery-3.5.1.min.js"></script>
+    <script type="text/javascript" src="../lib/json_parse.js"></script>
+    <script type="text/javascript" src="../lib/json2.js"></script>
+    <script type="text/javascript" src="../js/languagemanage.js"></script>
+	<script type="text/javascript" src="../js/tools.js"></script>
+    <script type="text/javascript" src="../js/common.js"></script>
+    <script type="text/javascript" src="../js/rebootreset.js"></script>
+    <title></title>
+</head>
+<body>
+<div class="container">
+    <div id="header" class="header clearfix"></div>
+    <div class="content clearfix">
+        <div class="content-left">
+            <div id="menu-left" class="menu-left">
+                <div id="settings"></div>
+            </div>
+        </div>
+        <div class="content-right">
+            <div class="content-box">
+                <div id="main-title" class="main-title">
+                    <h1><script type="text/javascript">getText(str_reboot_reset_maintitle);</script></h1>
+                </div>
+                <div class="main-content">
+                    <div id="reboot" class="reboot">
+                        <div class="modetips">
+                            <p class="tips"><script>getText(str_reboot_top_des);</script></p>
+                            <p class="tips"><script>getText(str_reboot_des);</script></p>
+                        </div>
+                        <div class="btn-area">
+                            <input id="reboot_button" type="button" class="common-btn"/>
+                        </div>
+                    </div>
+                    <div id="reset" class="reset">
+                        <div class="modetips">
+                            <p class="tips"><script>getText(str_reset_des);</script></p>
+                        </div>
+                        <div class="btn-area">
+                            <input id="reset_button" type="button" class="common-btn"/>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div id="footer" class="footer">
+        <div id="copyright" class="copyright">
+            <span><script type="text/javascript">getText(common_copyright);</script>&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;<a href="/html/Open_Source_Software_Notice.txt"><script type="text/javascript">getText(common_opensource);</script></a></span>
+        </div>
+    </div>
+</div>
+<noscript>
+    <div class="noscript_text">
+        Your browser does not support JavaScript.
+    </div>
+</noscript>
+</body>
+</html>

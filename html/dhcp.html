@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html>
+<head lang="en">
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=Edge">
+    <link rel="shortcut icon" href="../images/favicon.ico">
+    <link rel="stylesheet" href="../css/common.css"/>
+    <link rel="stylesheet" href="../css/dhcp.css"/>
+    <script type="text/javascript" src="../lib/jquery-3.5.1.min.js"></script>
+    <script type="text/javascript" src="../lib/json_parse.js"></script>
+    <script type="text/javascript" src="../lib/json2.js"></script>
+    <script type="text/javascript" src="../js/languagemanage.js"></script>
+    <script type="text/javascript" src="../js/tools.js"></script>	
+    <script type="text/javascript" src="../js/common.js"></script>
+    <script type="text/javascript" src="../js/dhcp.js"></script>
+    <title></title>
+</head>
+<body>
+<div class="container">
+    <div id="header" class="header clearfix"></div>
+    <div class="content clearfix">
+        <div class="content-left">
+            <div id="menu-left" class="menu-left">
+                <div id="settings"></div>
+            </div>
+        </div>
+        <div class="content-right">
+            <div class="content-box">
+                <div id="main-title" class="main-title">
+                    <h1><script type="text/javascript">getText(str_dhcp_server);</script></h1>
+                </div>
+                <div class="main-content">
+                    <form id="dhcpsettings">
+                        <table cellpadding="0" cellspacing="0" width="500" class="">
+                            <tbody>
+                            <tr>
+                                <td width="210"><script type="text/javascript">getText(str_wlan_dhcp_server + common_colon);</script></td>
+                                <!--<td id="serverstatus">-->
+                                    <!--<input id="dhcpon" type="radio" value="1" name="dhcpturn"/><span><script type="text/javascript">getText(common_enable);</script></span>-->
+                                    <!--<input id="dhcpoff" type="radio" value="0" name="dhcpturn"/><span><script type="text/javascript">getText(common_disable);</script></span>-->
+                                <!--</td>-->
+                                <td>
+                                    <select id="dhcpmode" class="select-status"></select>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td width="210"><script type="text/javascript">getText(str_wlan_dhcp_ipddr + common_colon);</script></td>
+                                <td>
+                                    <span id="ipaddr1">192</span><span>.</span>
+                                    <span id="ipaddr2">168</span><span>.</span>
+                                    <input id="ipaddr3" name="ipaddr3" class="inputip" type="text" /><span>.</span>
+                                    <input id="ipaddr4" name="ipaddr4" class="inputip" type="text" />
+                                </td>
+                            </tr>
+                            <tr id="iptips" style="display:none;">
+                                <td width="210"></td>
+                                <td id="ipaddrtips"></td>
+                            </tr>
+                            <tr>
+                                <td width="210"><script type="text/javascript">getText(str_wlan_dhcp_iprange + common_colon);</script></td>
+                                <td>
+                                    <input id="dhcpstart" type="text" maxlength="3" name="dhcpstart" class="inputip" />
+                                    <span><script type="text/javascript">getText(common_to);</script></span>
+                                    <input id="dhcpend" name="dhcpend" class="inputip" type="text" />
+                                </td>
+                            </tr>
+                            <tr id="iprange">
+                                <td width="210"></td>
+                                <td id="iprangetips"></td>
+                            </tr>
+                            <tr>
+                                <td width="210"><script type="text/javascript">getText(str_wlan_dhcp_leasetime + common_colon);</script></td>
+                                <td>
+                                    <input id="leasetime" name="leasetime" type="text" /><span><script type="text/javascript">getText(str_seconds);</script></span>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td></td>
+                                <td id="leasetimetips" class="error-tips"></td>
+                            </tr>
+                            </tbody>
+                        </table>
+                    </form>
+                    <div class="btn-area">
+                        <input id="apply" type="button" class="common-btn"/>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div id="footer" class="footer">
+        <div id="copyright" class="copyright">
+            <span><script type="text/javascript">getText(common_copyright);</script>&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;<a href="/html/Open_Source_Software_Notice.txt"><script type="text/javascript">getText(common_opensource);</script></a></span>
+        </div>
+    </div>
+</div>
+<noscript>
+    <div class="noscript_text">
+        Your browser does not support JavaScript.
+    </div>
+</noscript>
+</body>
+</html>

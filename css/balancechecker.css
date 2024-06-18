@@ -1,0 +1,68 @@
+.content-right{
+    background: none;
+}
+.right-title{
+    width: 298px;
+}
+.topbtn{
+    width: 500px;
+    height: 30px;
+    color: red;
+    font-size: 16px;
+    font-weight: bold;
+    line-height: 30px;
+    background: linear-gradient(rgb(235,235,235),rgb(190,190,190));
+    border: 1px solid #ffffff;
+    border-radius: 5px;
+    display: block;
+    margin: 20px;
+    cursor: pointer;
+}
+.short-message{
+    display: block;
+    min-width: 478px;
+    min-height: 300px;
+    max-width: 478px;
+    max-height: 300px;
+    margin: 10px 0;
+    padding: 10px;
+    border-radius: 25px;
+    font-size: 14px;
+}
+.input-status{
+    width: 190px;
+    height: 29px;
+    border: 1px solid rgb(68,150,168);
+    border-radius: 5px;
+    padding-left: 10px;
+    margin-left: 250px;
+    position: relative;
+    top: -30px;
+}
+.btn{
+    border: 1px solid rgb(23,87,135);
+    background: rgb(23,87,135);
+    width: 57px;
+    height: 31px;
+    border-radius: 5px;
+    color: #ffffff;
+    position: relative;
+    top: -30px;
+    margin-left: 5px;
+}
+#response_ussdcode:disabled{
+    background-color: rgb(92,143,180);
+    border: 1px solid rgb(92,143,180);
+}
+.input-title{
+    font-size: 15px;
+    margin-bottom: 3px;
+}
+.errorTips{
+    font-size: 15px;
+    margin-left: 250px;
+    margin-right: 20px;
+    padding-bottom: 20px;
+    margin-top: -15px;
+    color: red;
+}

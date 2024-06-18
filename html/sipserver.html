@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html>
+<head lang="en">
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=Edge">
+    <link rel="shortcut icon" href="../images/favicon.ico">
+    <link rel="stylesheet" href="../css/common.css"/>
+    <link rel="stylesheet" href="../css/sipserver.css"/>
+    <script type="text/javascript" src="../lib/jquery-3.5.1.min.js"></script>
+    <script type="text/javascript" src="../lib/json_parse.js"></script>
+    <script type="text/javascript" src="../lib/json2.js"></script>
+    <script type="text/javascript" src="../js/languagemanage.js"></script>
+    <script type="text/javascript" src="../js/tools.js"></script>	
+    <script type="text/javascript" src="../js/common.js"></script>
+    <script type="text/javascript" src="../js/sipserver.js"></script>
+    <title></title>
+</head>
+<body>
+<div class="container">
+    <div id="header" class="header clearfix"></div>
+    
+    <div class="content clearfix">
+        <div class="content-left">
+            <div id="menu-left" class="menu-left">
+                <div id="settings"></div>
+            </div>
+        </div>
+        <div class="content-right">
+            <div class="content-box">
+                <div id="main-title" class="main-title">
+                    <h1><script type="text/javascript">getText(str_registration_server);</script></h1>
+                </div>
+                <div class="main-content">
+                    <form id="sipserver">
+                        <table cellpadding="0" cellspacing="0" width="" class="">
+                            <tbody>
+                                <tr>
+                                    <td width="185"><script type="text/javascript">getText(str_proxy_address + common_colon);</script></td>
+                                    <td><input id="proxyaddress" type="text" class="inputip" maxlength="64"/></td>
+                                    <td width="" class="sipdes"><script type="text/javascript">getText(str_proxy_address_des);</script></td>
+                                </tr>
+                                <tr id="addresstips" style="display: none">
+                                    <td></td>
+                                    <td colspan="2" id="addrtips" class="tips"></td>
+                                </tr>
+                                <tr>
+                                    <td width="185"><script type="text/javascript">getText(str_sip_address + common_colon);</script></td>
+                                    <td><input id="regaddress" type="text" class="inputip" maxlength="64"/></td>
+                                    <td width="" class="sipdes"><script type="text/javascript">getText(str_registration_address_des);</script></td>
+                                </tr>
+                                <tr id="regaddresstips" style="display: none">
+                                    <td></td>
+                                    <td colspan="2" id="regaddrtips" class="tips"></td>
+                                </tr>
+                                <tr>
+                                    <td width="185"><script type="text/javascript">getText(str_server_port + common_colon);</script></td>
+                                    <td><input id="regproxy" type="text" class="inputip"/></td>
+                                    <td width="" class="sipdes"><script type="text/javascript">getText(str_server_port_des);</script></td>
+                                </tr>
+                                <tr id="registrationporttips" style="display: none">
+                                    <td></td>
+                                    <td colspan="2" id="regporttips" class="tips"></td>
+                                </tr>
+                                <tr>
+                                    <td width="185"><script type="text/javascript">getText(str_sip_outbound_server + common_colon);</script></td>
+                                    <td><input id="outboundserver" type="text" class="inputip" maxlength="64"/></td>
+                                    <td width="" class="sipdes"><script type="text/javascript">getText(str_registration_address_des);</script></td>
+                                </tr>
+                                <tr id="outboundservertips" style="display: none">
+                                    <td></td>
+                                    <td colspan="2" id="outboundtips" class="tips"></td>
+                                </tr>
+                                <tr>
+                                    <td width="185"><script type="text/javascript">getText(str_outbound_port + common_colon);</script></td>
+                                    <td><input id="outport" type="text" class="inputip"/></td>
+                                    <td width="" class="sipdes"><script type="text/javascript">getText(str_server_port_des);</script></td>
+                                </tr>
+                                <tr id="outboundporttips" style="display: none">
+                                    <td></td>
+                                    <td colspan="2" id="outporttips" class="tips"></td>
+                                </tr>
+                                <tr>
+                                    <td width="185"><script type="text/javascript">getText(str_server_protocol + common_colon);</script></td>
+                                    <td>
+                                        <select id="protocol" class="select-status"></select>
+                                    </td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </form>
+                    <div class="btn-area">
+                        <input id="apply" type="button" class="common-btn"/>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div id="footer" class="footer">
+        <div id="copyright" class="copyright">
+            <span><script type="text/javascript">getText(common_copyright);</script>&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;<a href="/html/Open_Source_Software_Notice.txt"><script type="text/javascript">getText(common_opensource);</script></a></span>
+        </div>
+    </div>
+</div>
+<noscript>
+    <div class="noscript_text">
+        Your browser does not support JavaScript.
+    </div>
+</noscript>
+</body>
+</html>

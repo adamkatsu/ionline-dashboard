@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html>
+<head lang="en">
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=Edge">
+    <link rel="shortcut icon" href="../images/favicon.ico">
+    <link rel="stylesheet" href="../css/common.css"/>
+    <link rel="stylesheet" href="../css/sntp.css"/>
+    <script type="text/javascript" src="../lib/jquery-3.5.1.min.js"></script>
+    <script type="text/javascript" src="../lib/json_parse.js"></script>
+    <script type="text/javascript" src="../lib/json2.js"></script>
+    <script type="text/javascript" src="../js/languagemanage.js"></script>
+    <script type="text/javascript" src="../js/tools.js"></script>	
+    <script type="text/javascript" src="../js/common.js"></script>
+    <script type="text/javascript" src="../js/sntp.js"></script>
+    <title></title>
+</head>
+<body>
+<div class="container">
+    <div id="header" class="header clearfix"></div>
+    <div class="content clearfix">
+        <div class="content-left">
+            <div id="menu-left" class="menu-left">
+                <div id="settings"></div>
+            </div>
+        </div>
+        <div class="content-right">
+            <div class="content-box">
+                <div id="main-title" class="main-title">
+                    <h1><script type="text/javascript">getText(str_sntp);</script></h1>
+                </div>
+                <div class="main-content">
+                    <div id="mobile-connection">
+                        <div id="sntp-status">
+                            <table cellpadding="0" cellspacing="0" width="600" class="marginleft20">
+                                <tbody>
+                                    <tr>
+                                        <td width="190"><script type="text/javascript">getText(str_sntp_currenttime + common_colon);</script></td>
+                                        <td id="currenttime" width="250"></td>
+                                        <td align="right"><span id="change-ct" class="aLink"><script type="text/javascript">getText(str_sntp_modifyTime);</script></span></td>
+                                    </tr>
+                                    <tr>
+                                        <td width="190"><script type="text/javascript">getText(str_sntp_status + common_colon);</script></td>
+                                        <td id="sntpstatus"></td>
+                                        <td></td>
+                                    </tr>
+                                    <tr id="lastsuctr">
+                                        <td width="190"><script type="text/javascript">getText(str_sntp_lastsuccess + common_colon);</script></td>
+                                        <td id="lastsuccess"></td>
+                                        <td></td>
+                                    </tr>
+                                    <tr>
+                                        <td width="190"><script type="text/javascript">getText(str_timezone + common_colon);</script></td>
+                                        <td id="timezone" width="250"></td>
+                                        <td align="right"><span id="change-tz" class="aLink"><script type="text/javascript">getText(str_sntp_modifyTimezone);</script></span></td>
+                                    </tr>
+                                    <tr>
+                                        <td width="190"><script type="text/javascript">getText(str_time_format + common_colon);</script></td>
+                                        <td>
+                                            <select class="select-status" id="HourFormat">
+                                                <option value="1"><script type="text/javascript">getText(str_sntp_12hourformat);</script></option>
+                                                <option value="0"><script type="text/javascript">getText(str_sntp_24hourformat);</script></option>
+                                            </select>
+                                        </td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                        </div>
+                        <div id="autosync-networktime">
+                            <div class="enable-title">
+                                <input type="checkbox" id="enable-networktime"/>
+                                <span><script type="text/javascript">getText(str_auto_sync);</script></span>
+                            </div>
+                            <table cellpadding="0" cellspacing="0" width="600" class="marginleft20" id="autosync">
+                                <tbody>
+                                <tr>
+                                    <td width="200"><script type="text/javascript">getText(str_timeserver1 + common_colon);</script></td>
+                                    <td width="255" style="position: relative;">
+                                        <select id="timeserver1" name="index" class="select-status behind"></select>
+                                        <input id="server_other1" class="input-status front" type="text" maxlength="64"/>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td width=""><script type="text/javascript">getText(str_timeserver2 + common_colon);</script></td>
+                                    <td style="position: relative;">
+                                        <select id="timeserver2" name="index" class="select-status behind"></select>
+                                        <input id="server_other2" class="input-status front" type="text" maxlength="64"/>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td width=""><script type="text/javascript">getText(str_timeserver3 + common_colon);</script></td>
+                                    <td style="position: relative;">
+                                        <select id="timeserver3" name="index" class="select-status behind"></select>
+                                        <input id="server_other3" class="input-status front" type="text" maxlength="64"/>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td width=""><script type="text/javascript">getText(str_timeserver4 + common_colon);</script></td>
+                                    <td style="position: relative;">
+                                        <select id="timeserver4" name="index" class="select-status behind"></select>
+                                        <input id="server_other4" class="input-status front" type="text" maxlength="64"/>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td width=""><script type="text/javascript">getText(str_timeserver5 + common_colon);</script></td>
+                                    <td style="position: relative;">
+                                        <select id="timeserver5" name="index" class="select-status behind"></select>
+                                        <input id="server_other5" class="input-status front" type="text" maxlength="64"/>
+                                    </td>
+                                </tr>
+                                </tbody>
+                            </table>
+                        </div>
+                    </div>
+                    <div class="btn-area">
+                        <input id="apply" type="button" class="common-btn"/>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div id="footer" class="footer">
+        <div id="copyright" class="copyright">
+            <span><script type="text/javascript">getText(common_copyright);</script>&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;<a href="/html/Open_Source_Software_Notice.txt"><script type="text/javascript">getText(common_opensource);</script></a></span>
+        </div>
+    </div>
+</div>
+<noscript>
+    <div class="noscript_text">
+        Your browser does not support JavaScript.
+    </div>
+</noscript>
+</body>
+</html>

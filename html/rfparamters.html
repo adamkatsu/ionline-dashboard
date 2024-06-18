@@ -1,0 +1,82 @@
+<!doctype html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=Edge">
+    <link rel="shortcut icon" href="../images/favicon.ico">
+    <link rel="stylesheet" href="../css/common.css" />
+    <link rel="stylesheet" href="../css/deviceinfo.css" />
+    <script type="text/javascript" src="../lib/jquery-3.5.1.min.js"></script>
+    <script type="text/javascript" src="../lib/json_parse.js"></script>
+    <script type="text/javascript" src="../lib/json2.js"></script>
+    <script type="text/javascript" src="../js/languagemanage.js"></script>
+    <script type="text/javascript" src="../js/tools.js"></script>
+    <script type="text/javascript" src="../js/common.js"></script>
+    <script type="text/javascript" src="../js/rfparamters.js"></script>
+    <title></title>
+</head>
+<body>
+<div id="container" class="container">
+    <div id="header" class="header clearfix"></div>
+    <div id="content" class="content clearfix">
+        <div class="content-left">
+            <div id="menu-left" class="menu-left">
+                <div id="settings"></div>
+            </div>
+        </div>
+        <div id="content-right" class="content-right">
+            <div class="content-box">
+                <div id="rftitle" class="main-title">
+                    <h1><script type="text/javascript">getText(str_statistics_rf_title);</script></h1>
+                </div>
+                <div id="rfparamters" class="main-content" style="margin-bottom:0 ">
+                    <table cellpadding="0" cellspacing="0" width="500" class="" id="rfparam">
+                        <tbody>
+                        <tr>
+                            <td width="210"><script type="text/javascript">getText(str_statistics_rf_rsrp+common_colon);</script></td> <td></td>
+                        </tr>
+                        <tr>
+                            <td><script type="text/javascript">getText(str_statistics_rf_rssi+common_colon);</script> </td> <td></td>
+                        </tr>
+                        <tr>
+                            <td><script type="text/javascript">getText(str_statistics_rf_rsrq+common_colon);</script></td> <td></td>
+                        </tr>
+                        <tr>
+                            <td><script type="text/javascript">getText(str_statistics_rf_sinr+common_colon);</script></td> <td></td>
+                        </tr>
+                        </tbody>
+                    </table>
+                </div>
+                <div id="caData" class="main-content" style="display:none;margin-top:0;">
+                    <table cellpadding="0" cellspacing="0" width="500" class="">
+                        <tbody>
+                        <tr>
+                            <td width="210"><script type="text/javascript">getText(str_statistics_rf_ca+common_colon);</script></td> <td id="ca_state"></td>
+                        </tr>
+                        <tr>
+                            <td><script type="text/javascript">getText(str_statistics_rf_pcc+common_colon);</script> </td> <td id="pcc_band"></td>
+                        </tr>
+                        <tr>
+                            <td><script type="text/javascript">getText(str_statistics_rf_scc1+common_colon);</script></td> <td id="scc_band_1"></td>
+                        </tr>
+                        <tr>
+                            <td><script type="text/javascript">getText(str_statistics_rf_scc2+common_colon);</script></td> <td id="scc_band_2"></td>
+                        </tr>
+
+                        </tbody>
+                    </table>
+                </div>
+
+
+
+            </div>
+        </div>
+    </div>
+    <div id="footer" class="footer">
+        <div id="copyright" class="copyright">
+            <span><script type="text/javascript">getText(common_copyright);</script>&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;<a href="/html/Open_Source_Software_Notice.txt"><script type="text/javascript">getText(common_opensource);</script></a></span>
+        </div>
+    </div>
+</div>
+</body>
+</html>

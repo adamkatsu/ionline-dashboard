@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html>
+<head lang="en">
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=Edge">
+    <link rel="shortcut icon" href="../images/favicon.ico">
+    <link rel="stylesheet" href="../css/common.css"/>
+    <link rel="stylesheet" href="../css/macfilter.css"/>
+    <script type="text/javascript" src="../lib/jquery-3.5.1.min.js"></script>
+    <script type="text/javascript" src="../lib/json_parse.js"></script>
+    <script type="text/javascript" src="../lib/json2.js"></script>
+    <script type="text/javascript" src="../js/languagemanage.js"></script>
+    <script type="text/javascript" src="../js/tools.js"></script>	
+    <script type="text/javascript" src="../js/common.js"></script>
+    <script type="text/javascript" src="../js/macfilter.js"></script>
+    <title></title>
+</head>
+<body>
+<div class="container">
+    <div id="header" class="header clearfix"></div>
+    <div class="content clearfix">
+        <div class="content-left">
+            <div id="menu-left" class="menu-left">
+                <div id="settings"></div>
+            </div>
+        </div>
+        <div class="content-right">
+            <div class="content-box">
+                <div id="main-title" class="main-title">
+                    <h1><script type="text/javascript">getText(str_macfilter);</script></h1>
+                </div>
+                <div class="main-content">
+                    <form id="macfiltersettings">
+                        <table cellpadding="0" cellspacing="0" width="500" class="">
+                            <tbody>
+                            <tr>
+                                <td width="210"><script type="text/javascript">getText(common_status + common_colon);</script></td>
+                                <td>
+                                    <select id="macfiltermode" class="select-status"></select>
+                                </td>
+                            </tr>
+                            </tbody>
+                        </table>
+                    </form>
+                    <div class="modetips">
+                        <p class="tips"><script>getText(str_security_macfilter_whitelist);</script></p>
+                        <p class="tips"><script>getText(str_security_macfilter_blacklist);</script></p>
+                        <p class="tips"><script>getText(str_security_macfilter_example);</script></p>
+                    </div>
+                    <div id="macfilterlist"></div>
+                    <div class="btn-area firewall_btn-area">
+                        <input id="apply" type="button" class="common-btn"/>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div id="footer" class="footer">
+        <div id="copyright" class="copyright">
+            <span><script type="text/javascript">getText(common_copyright);</script>&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;<a href="/html/Open_Source_Software_Notice.txt"><script type="text/javascript">getText(common_opensource);</script></a></span>
+        </div>
+    </div>
+</div>
+<noscript>
+    <div class="noscript_text">
+        Your browser does not support JavaScript.
+    </div>
+</noscript>
+</body>
+</html>

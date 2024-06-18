@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html>
+<head lang="en">
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=Edge">
+    <link rel="shortcut icon" href="../images/favicon.ico">
+    <link rel="stylesheet" href="../css/login.css"/>
+    <script type="text/javascript" src="../lib/jquery-3.5.1.min.js"></script>
+    <script type="text/javascript" src="../lib/json2.js"></script>
+    <script type="text/javascript" src="../js/languagemanage.js"></script>
+    <script type="text/javascript" src="../js/tools.js"></script>
+    <script type="text/javascript" src="../js/md5.js"></script>
+    <script type="text/javascript" src="../js/encryption.js"></script>
+    <script type="text/javascript" src="../js/login.js"></script>
+    <title></title>
+</head>
+<body>
+<div class="containerlogin">
+    <div class="headerlogin">
+        <div class="toollogin">
+            <img src="../images/logo_black.png" alt="lolg" class="logo"/>
+            <table class="main-menu">
+                <tr>
+                    <td>
+                        <script type="text/javascript">getText(str_language + common_colon);</script>
+                        <select class="selectList" id="langid"></select>
+                    </td>
+                </tr>
+            </table>
+        </div>
+    </div>
+    <div class="contentlogin">
+        <div class="loginDivBig">
+            <div class="loginDiv">
+                <form class="login-input" method="post">
+                    <table>
+                        <tr>
+                            <td><div class="usernamediv">
+                                <img src="../images/username.png" height="21" alt=""/>
+                                <input type="text" name="username" id="username" class="username" maxlength="15"/>
+                            </div></td>
+                        </tr>
+                        <tr>
+                            <td><div class="pswdiv">
+                                <img src="../images/psw.png" height="21" alt=""/>
+                                <input type="password" name="password" id="password" class="psw" maxlength="36"/>
+                            </div></td>
+                        </tr>
+                        <tr>
+                            <td><input type="submit" class="bt_login" onclick="return login();"/></td>
+                        </tr>
+                    </table>
+                </form>
+            </div>
+            <div class="logintip">
+                <p id="tips" style="position: relative"><span></span></p>
+                <p id="pwtips" style="position: relative"><span></span></p>
+                <p id="numtips" style="position: relative"><span></span></p>
+            </div>
+        </div>
+    </div>
+</div>
+<div id="footer" class="footer">
+    <div id="copyright" class="copyright">
+        <span><script type="text/javascript">getText(common_copyright);</script>&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;<a href="./Open_Source_Software_Notice.txt"><script type="text/javascript">getText(common_opensource);</script></a></span>
+    </div>
+</div>
+<noscript>
+    <div class="noscript_text">
+        Your browser does not support JavaScript.
+    </div>
+</noscript>
+</body>
+</html>
