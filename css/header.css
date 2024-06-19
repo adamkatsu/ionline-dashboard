@@ -1,16 +1,4 @@
-@font-face {
-    font-family: monsterrat;
-    src: url("../font/monsterrat.ttf");
-}
 
-* {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-    font-family: monsterrat, sans-serif;
-    font-size: 16px;
-    font-weight: 500;
-}
 .header{
     width: 100%;
     position: relative;
@@ -22,10 +10,11 @@
     position: relative;
 }
 .logo{
-    padding: 16px 24px;
+    padding: 0 24px;
 }
 .logo img{
     width: 120px;
+    object-fit: contain;
 }
 .selectList{
     color: #4d4d4f;
@@ -53,6 +42,21 @@
     justify-content: flex-end;
     margin: auto;
 }
+.header-action {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 24px;
+}
+.header-action_divider {
+    height: 64px;
+    width: 1px;
+    background-color: #E4E4E4;
+}
+.bt_logout a {
+    color: #4d4d4f;
+}
+
 .main-menu {
     display: flex;
     flex-direction: row;

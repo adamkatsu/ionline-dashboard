@@ -1,0 +1,44 @@
+@font-face {
+    font-family: monsterrat;
+    src: url("../font/monsterrat.ttf");
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: monsterrat, sans-serif;
+    font-size: 16px;
+    font-weight: 500;
+    color: #4D4D4F;
+}
+body {
+    background-color: #F9F9F9;
+}
+a {
+    text-decoration: none;
+    color: inherit;
+}
+.content {
+    margin: auto;
+}
+.w-full {
+    width: 100%;
+    padding: 48px 80px;
+}
+.hide {
+    display: none;
+}
+.footer {
+    width: 100%;
+}
+.copyright {
+    padding: 16px 80px;
+    margin: auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+
+

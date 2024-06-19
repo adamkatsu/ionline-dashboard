@@ -1,179 +1,65 @@
-/* .content-top-home{
-    min-width: 960px;
-    height: 159px;
-    margin: 0 auto;
-    background-image: url("../images/home_bg.png");
-    background-size: 100% 100%;
-    position: relative;
-} */
-.midBigTitle{
-    width: 960px;
-    height: 70px;
-    margin-top: 30px;
-    position: relative;
+.content-container{
+    max-width: 970px;
+    margin: auto;
+    display: flex;
+    flex-direction: column;
+    gap: 48px;
+    justify-content: flex-start;
+    align-items: center;
 }
-.internet_status,.wifi_status,.connected_clients{
-    width: 200px;
-    height: 70px;
-    line-height: 70px;
-    font-size: 18px;
-    text-align: center;
+.mid1 {
+    width: 100%;
+    max-width: 500px;
+    display: flex;
+    flex-direction: row;
+    gap: 32px;
+    justify-content: space-between;
 }
-.internet_status{
-    width: 230px;
-    position: absolute;
-    left: 46px;
-}
-.wifi_status{
-    position: absolute;
-    left: 373px;
-}
-.connected_clients{
-    width: 220px;
-    position: absolute;
-    left: 675px;
-}
-.home_title{
-    width: 160px;
-}
-.home_space{
-    width: 142px;
-}
-.connected_clients span{
-    color: rgb(0,174,243);
-}
-.ipv6hide{
-    display: none;
-}
-.mid1{
-    width: 800px;
-    height: 145px;
-    margin: 20px auto;
-}
-.midBig{
-    width: 122px;
-    height: 145px;
-    text-align: center;
-    /*border: 1px solid rgb(125,125,125);*/
-    margin: 0 72px;
-    border-radius: 10px;
-    float: left;
+.midBig {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 8px;
     cursor: pointer;
 }
-.midBigOnfocus{
-    color: rgb(14,100,142);
+.home-menu-icon {
+    color: #4d4d4f;
+    background-color: #ffffff; 
+    height: 100px;
+    width: 100px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 24px;
+    box-shadow: 0px 2px 4px 0px rgba(0, 0, 0, 0.10);
 }
-.midBig img{
-    width: 115px;
-    height: 115px;
-}
-.mid2{
-    width: 800px;
-    height: 50px;
-    margin: 0 auto;
-    border-bottom: 2px solid rgb(135,135,135);
-}
-.mid2 h1{
-    text-align: left;
-}
-.mid3{
-    width: 800px;
-    margin: 0 auto;
-    margin-top: 20px;
-}
-.midDown_internet{
-    border-collapse: collapse;
-    margin: 0 auto;
-    text-align: center;
-}
-.midDown_internet tr th{
-    /*border: 2px solid rgb(68,150,168);*/
-    border: 2px solid rgb(68,150,168);
-}
-.midDown_internet tr td{
-    /*border: 2px solid rgb(68,150,168);*/
-    /*border: 2px solid rgb(175,175,175);*/
-    border: 2px solid rgb(68,150,168);
-    width: 330px;
-    height: 40px;
-}
-.gotoset{
-    width: 960px;
-    margin: 0 auto;
-}
-.midDown_i232s{
-    border-collapse: collapse;
-    margin: 0 auto;
-    text-align: center;
-}
-.midDown_i232s tr td  pre{
-    margin: 0px;
-    text-align: center;
-    font-size: inherit;
-    font-family: inherit;
-	word-break: break-all;
-    white-space: pre-wrap;
-}
-.bt_gotoset{
-    width: 200px;
-    height: 40px;
-    background-color: rgb(0,173,239);
+.midBigOnfocus .home-menu-icon {
     color: #ffffff;
-    cursor: pointer;
-    border: none;
-    font-size: 18px;
-    margin-left:680px;
-    margin-bottom: 50px;
-    margin-top: 30px;
+    background-color: #F69322;
+    box-shadow: 0px 2px 4px 0px rgba(246, 147, 34, 0.25);
 }
-.midDown_i232s tr th{
-    height: 40px;
-    border: 2px solid rgb(68,150,168);
-    margin: 0;
+.home-menu-icon svg path{
+    color: #4d4d4f;
 }
-.midDown_i232s tr td{
-    border: 2px solid rgb(68,150,168);
-    width: 330px;
-    height: 40px;
+.midBigOnfocus .home-menu-icon svg path{
+    color: #ffffff;
 }
-.midDown_connected{
+#internet, #wifi, #client {
+    width: 100%;
+    background-color: #fff;
+    box-shadow: 0px 2px 4px 0px rgba(0, 0, 0, 0.10);
+}
+.mid3 {
+    width: 100%;
+    border: 1px solid #E4E4E4;
+    border-radius: 8px;
+}
+.mid3 table {
+    width: 100%;
     border-collapse: collapse;
-    margin: 0 auto;
 }
-.midDown_connected tr th{
-    height: 30px;
-    border: 2px solid rgb(68,150,168);
-}
-.midDown_connected tr td{
-    height: 30px;
-    text-align: center;
-    border: 2px solid rgb(68,150,168);
-}
-
-.jeremy{
-    margin-left: 70px;
-}
-
-.desktop table tr td{
-    width: 175px;
-    height: 42px;
-}
-.desktopDown td{
-    padding-left: 30px;
-}
-.desktopUp{
-    color: rgb(0,174,243);
-    text-align: center;
-}
-.jeremy table tr td{
-    width: 175px;
-    height: 42px;
-}
-.jeremyDown td{
-    padding-left: 30px;
-}
-.jeremyUp{
-    color: rgb(0,174,243);
-    text-align: center;
-}
-
+.mid3 table td {
+    width: 50%;
+    padding: 16px;
+    border: 1px solid #E4E4E4;
+} 
