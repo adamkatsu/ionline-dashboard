@@ -111,7 +111,7 @@ var g_headInfo = [
             '<div class="tool">',
                 '<div class="header-tools_container">',
                     '<div class="main-menu">',
-                        '<div class="bt_home" id="gotohome">',
+                        '<div class="bt_home header-menu_active" id="gotohome">',
                             '<a id="home" href="common/home.html">Home</a>',
                         '</div>',
                         '<div class="bt_shortmessage" id="gotosms">',

@@ -67,6 +67,9 @@
     color: #A6A6A7;
     text-decoration: none;
 }
+.header-menu_active a{
+    color: #ffffff;
+}
 .info {
     position: absolute;
 }
