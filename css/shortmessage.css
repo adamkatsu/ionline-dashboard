@@ -1,291 +1,41 @@
-.content-right{
-    width: 960px !important;
-}
-.right-sms-title{
-    width: 650px;
-    height: 35px;
-    border: 1px solid #ffffff;
-    box-shadow: 1px 1px 5px gray;
-    border-radius: 5px;
-    background: linear-gradient(rgb(255,227,227),rgb(255,164,163));
-    text-align: center;
-    line-height: 35px;
-    font-size: 20px;
-    font-weight: bold;
-    color: red;
-    /*border-left: 1px solid #dedede; 左右侧分割线*/
-    float: right;
-    margin-top: 5px;
-}
-.childmenu{
-    width: 680px;
-    height: 65px;
-    margin: 20px auto;
-    margin-left: 0px;
- /*   background: cadetblue;*/
-    position: relative;
+.content-container{
+    max-width: 970px;
+    margin: auto;
+    display: flex;
+    flex-direction: column;
+    gap: 48px;
+    justify-content: flex-start;
     align-items: center;
-    text-align: center;
 }
-
-.childmenu li{
-    margin-left: 130px;
-    float: right;
-    list-style: none;
-    user-select: none;
-}
-#inbox_img, #outbox_img, #draftbox_img{
-    width: 35px;
-    height: 34px;
-    position: relative;
-    top: 8px;
-}
-
-
-.sms-right{
-    width: 940px;
-    min-height: 335px;
-    margin: 30px auto;
-    margin-left: 10px;
-    margin-right: 10px;
-    /*background: #6a6a6a;*/
-    position: relative;
-}
-.submenusms{
-    border-radius: 100%;
-    background: rgb(200,200,200);
-    color: #000000;
-}
-
-
-.sms-menu{
-    width: 50px;
-    height: 50px;
-    list-style: none;
-    margin: 10px 0px;
-    line-height: 35px;
-}
-.sms-menu-str{
-    display: block;
-    width: 170px;
-    height: 20px;
-    position: relative;
-    text-align: center;
-    line-height: 20px;
-    left: -60px;
-    top: 5px;
-}
-
-#boxmessage{
-    margin: 10px 10px 10px 10px;
-    float: left;
-}
-.sms-operator{
-    margin: 10px 10px 10px 10px;
-    text-align: right;
-    position: relative;
-}
-#sms_data{
-    margin: auto 5px;
-}
-
-
-.sms_table {
-    color: black !important;
-    width:940px;
-    margin-top:1px;
-    text-align:center;
-    border-collapse: collapse;
-    table-layout: fixed;
-}
-.sms_table th {
-   /* background:#cecece;*/
-    color: black !important;
-    background: linear-gradient(rgb(204,204,204), rgb(204,204,204));
-   /* background: linear-gradient(rgb(235,235,235),rgb(190,190,190));*/
-    font:bold 16px/32px Arial;
-    border:1px solid #a6a6a6;
-    font-size: 14px;
-}
-
-.sms_table  tr th label{
-    /* background:#cecece;*/
-    color: black !important;
-}
-.sms_table td {
-    vertical-align:middle;
-    padding:7px 0 7px 0px;
-    border:1px solid #dbdbdb;
-}
-.error_message{
-    position: absolute;
-    margin-top: 20px;
-}
-.error_message label{
-    color: red;
-}
-
-/**
-分页
- */
-.sms_pagination { float:right;padding-right: 10px; color: black}
-.sms_pagination label,.sms_pagination b{ color: black}
-
-.sms_pagination div { display:none; }
-.sms_pagination span, .sms_pagination input { float:left; }
-.sms_go {
-    margin-top: 5px;
-    color: black;
-    border-radius: 7px;
-    min-width: 30px;
-}
-.pageBegin, .prePage, .pageLast, .nextPage {
-    width:15px;
-    height:15px;
-    background:url(../images/navPage.gif) no-repeat left -2px;
-    display:inline-block;
-    text-decoration: none;
-}
-.prePage { background-position:-18px -2px; }
-.pageLast { background-position:-84px -2px; }
-.nextPage { background-position:-68px -2px; }
-.page_num a { margin:5px 5px 0 5px;
-    color: black;
-}
-.page_num { margin-top:2px; }
-.page_list { margin:8px 20px 0 10px; }
-.page_list b { margin-left:10px; }
-.page_tool { padding-top:5px; }
-.sms_span { padding-top:5px; }
-.sms_page_tools{margin-bottom:5px ;}
-
-.clr_gray, .clr_gray_disable_btn_center .button_center a , .clr_gray_disable_btn_center .button_center,
-.clr_gray_bottom_table_td tr.oddTrBg td, .clr_gray_signal_nocard_p p, .clr_gray_table table {
-    color: #5C5C5C;
-}
-.mouse_on.clr_gray_disable_btn_center {
-    border: 1px solid #E0E0E0;
-}
-.disable_btn {
-    float: right;
-    min-width: 70px;
-    width: auto !important;
-    height: 25px;
-    padding: 0 5px 0 5px;
-    margin: 0 0 0 10px;
-    border: 1px solid #55BBFF;
-    border-radius: 2px;
-    background-image:-moz-linear-gradient(#F6FCFF 0%,#ACDDFA 50%,#88D6FA 55%,#7FD6FC 100%);
-    background-image:-webkit-linear-gradient(#F6FCFF 0%,#ACDDFA 50%,#88D6FA 55%,#7FD6FC 100%);
-    background-image:-o-linear-gradient(#F6FCFF 0%,#ACDDFA 50%,#88D6FA 55%,#7FD6FC 100%);
-    background-image:-ms-linear-gradient(#F6FCFF 0%,#ACDDFA 50%,#88D6FA 55%,#7FD6FC 100%);
-    filter:progid:DXImageTransform.Microsoft.gradient(0,startColorstr='#F6FCFF', endColorstr='#65CAFC' );
-    -ms-filter:"progid:DXImageTransform.Microsoft.gradient(0,startColorstr='#F6FCFF', endColorstr='#65CAFC')";
-    cursor: pointer;
-}
-
-.file_input_style, .input_style, .pin_input_style {
-    width:138px;
-    height:20px;
-    margin-right:10px;
-    line-height:20px;
-    padding-left:2px;
-    border:#a1a1a1 solid 1px;
-}
-.input_page{
-    width:26px;
-    height:20px;
-    margin-right:10px;
-    line-height:20px;
-    padding-left:1px;
-    margin-top: 6px;
-    border: 1px solid rgba(149, 149, 149, 1);
-}
-
-#deletemessage_button:disabled {
- /*   background-color: #dedede;*/
-    background: rgba(175, 175, 175,1);
-  /*  background: linear-gradient(rgba(125, 125, 125, 1), rgba(149, 149, 149, 1));*/
-    border: 1px solid #dedede;
-}
-
-.unread td{
-    font-weight: 600 !important;
-    color: #000000 !important;
-    font-family: sans-serif;
-    outline-style: none;
-}
-.read td{
-    font-weight:400 !important;
-    color: rgb(36, 36, 36); !important;
-    font-family: sans-serif;
-    outline-style: none;
-}
-
-.conact-btn{
-    min-width: 70px;
-    width: auto !important;
-    height: 25px;
-    padding: 0 5px 0 5px;
-    margin: 0 0 0 10px;
-    border: 1px solid rgb(190,190,190);
-    border-radius: 5px;
-    background: linear-gradient(rgb(235,235,235),rgb(190,190,190));
-    cursor: pointer;
-    /*font: bold 13px/25px Arial, sans-serif;*/
-}
-
-
-#newconactdialog{
-    min-width: 400px;
-    width: auto !important;
-    padding: 30px 30px 1px 60px;
-}
-
-.editmessages{
+.sms-right, #smssdiv {
     width: 100%;
-    min-height: 50px;
-    overflow: hidden;
-    margin: 0 auto;
 }
-
-#recipientsnew {
-    margin: 1px;
-    width: 415px;
-    height: 20px;
-    color: #535353 !important;
-    resize: none;
+.sms-menu {
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
 }
-
-#inputcontentnew {
-    margin: 1px;
-    width: 445px;
-    height: 85px;
-    color: #535353 !important;
-    resize: none;
+#smssdiv {
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
 }
-
-.left{
-    float: left;
+.childmenu ul{
+    display: flex;
+    flex-direction: row;
+    gap: 32px;
+    list-style: none;
 }
-.right{
-    float: right;
+.sms-operator {
+    display: flex;
+    flex-direction: row;
+    gap: 8px;
 }
-
-#delconacts{
-    width: 32px;
-    height: 32px;
-    margin: -2px 0;
+.box-message {
+    margin-right: 8px;
 }
-
-.autoShowWidth{
-   white-space:nowrap;
-    overflow:hidden;
-    text-overflow: ellipsis;
-}
-
-#ok-btn:disabled {
-   background-color: rgba(175, 175, 175,1);
-   /* background: linear-gradient(rgb(214, 89, 101), rgb(255, 88, 67));*/
-    border: 1px solid white;
+table {
+    width: 100%;
+    border: 1px solid black;
 }
