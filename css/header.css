@@ -1,11 +1,10 @@
-
 .header{
     width: 100%;
     position: relative;
 }
 .common_header{
     width: 100%;
-    margin: auto;
+    margin: 0 auto;
     background: #ffffff;
     position: relative;
 }
@@ -89,4 +88,7 @@
 }
 .sms_title {
     color: #ffffff;
+}
+.selectList {
+    background-color: transparent;
 }

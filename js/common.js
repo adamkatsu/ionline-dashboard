@@ -94,7 +94,7 @@ var g_headInfo = [
     '<div id="common_header" class="common_header">',
             '<div id="logo" class="logo">',
                 '<div class="header-logo_container">',
-                    '<img src="../images/logo_black.png">',
+                    '<img src="../images/new/logo-transparent.png">',
                     '<div class="header-action">',
                         '<div class="bt_logout">',
                             '<a id="logout" href="">Logout</a>',
