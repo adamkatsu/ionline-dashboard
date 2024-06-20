@@ -56,16 +56,16 @@ input[type="checkbox"] {
     outline: none;
     transition: outline 0.1s;
     cursor: pointer;
-  }
+}
 input[type="checkbox"]:checked {
-  background-size: 10px;
-  background-repeat: no-repeat;
-  background-position: center center;
-  padding: 2px;
-  background-color: #F69322;
+    background-size: 10px;
+    background-repeat: no-repeat;
+    background-position: center center;
+    padding: 2px;
+    background-color: #F69322;
 }
 input[type="checkbox"]:not(:disabled):checked {
-  border-color: #F69322;
-  background-image: url('../images/new/checkbox-checked.svg');
+    border-color: #F69322;
+    background-image: url('../images/new/checkbox-checked.svg');
 }
 
