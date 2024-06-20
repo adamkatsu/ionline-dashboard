@@ -4,6 +4,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=Edge">
     <link rel="shortcut icon" href="../images/favicon.ico">
+    <link rel="stylesheet" href="../css/global.css"/>
     <link rel="stylesheet" href="../css/login.css"/>
     <script type="text/javascript" src="../lib/jquery-3.5.1.min.js"></script>
     <script type="text/javascript" src="../lib/json2.js"></script>
@@ -15,7 +16,7 @@
     <title></title>
 </head>
 <body>
-<div class="containerlogin">
+<div class="container containerlogin">
     <div class="headerlogin">
         <div class="toollogin">
             <img src="../images/logo_black.png" alt="lolg" class="logo"/>
@@ -32,25 +33,26 @@
     <div class="contentlogin">
         <div class="loginDivBig">
             <div class="loginDiv">
+                <img src="../images/new/i-logo.svg" alt="" class="login-logo">
+                <span class="login-title">Login</span>
+                <p class="login-desc">Log in with the data that you have entered during registration to access your account</p>
                 <form class="login-input" method="post">
-                    <table>
-                        <tr>
-                            <td><div class="usernamediv">
-                                <img src="../images/username.png" height="21" alt=""/>
-                                <input type="text" name="username" id="username" class="username" maxlength="15"/>
-                            </div></td>
-                        </tr>
-                        <tr>
-                            <td><div class="pswdiv">
-                                <img src="../images/psw.png" height="21" alt=""/>
-                                <input type="password" name="password" id="password" class="psw" maxlength="36"/>
-                            </div></td>
-                        </tr>
-                        <tr>
-                            <td><input type="submit" class="bt_login" onclick="return login();"/></td>
-                        </tr>
-                    </table>
+                    <div class="usernamediv">
+                        <label class="login-form-label" for="username">Username</label>
+                        <img src="../images/username.png" height="21" alt=""/>
+                        <input type="text" name="username" id="username" class="username" maxlength="15"/>
+                    </div>
+                    <div class="pswdiv">
+                        <label class="login-form-label" for="password">Password</label>
+                        <img src="../images/psw.png" height="21" alt=""/>
+                        <input type="password" name="password" id="password" class="psw" maxlength="36"/>
+                    </div>
+                    <input type="submit" class="bt_login" onclick="return login();"/>
                 </form>
+                <span class="login-desc">
+                    Forgot your password?
+                    <span class="reset-password">Reset password</span>
+                </span>
             </div>
             <div class="logintip">
                 <p id="tips" style="position: relative"><span></span></p>
@@ -59,10 +61,10 @@
             </div>
         </div>
     </div>
-</div>
-<div id="footer" class="footer">
-    <div id="copyright" class="copyright">
-        <span><script type="text/javascript">getText(common_copyright);</script>&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;<a href="./Open_Source_Software_Notice.txt"><script type="text/javascript">getText(common_opensource);</script></a></span>
+    <div id="footer" class="footer">
+        <div id="copyright" class="copyright">
+            <span><a href="/html/Open_Source_Software_Notice.txt">COPYRIGHT © 2023 | Open Source Notice</a></span>
+        </div>
     </div>
 </div>
 <noscript>

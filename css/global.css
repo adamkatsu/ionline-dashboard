@@ -19,8 +19,14 @@ a {
     text-decoration: none;
     color: inherit;
 }
+.container {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    min-height: 100vh;
+}
 .content {
-    margin: auto;
+    margin: 0 auto;
 }
 .w-full {
     width: 100%;
@@ -31,6 +37,7 @@ a {
 }
 .footer {
     width: 100%;
+    margin: auto 0 0 0;
 }
 .copyright {
     padding: 16px 80px;
