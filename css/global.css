@@ -62,3 +62,4 @@ input[type="checkbox"]:not(:disabled):checked {
   border-color: #F69322;
   background-image: url('../images/new/checkbox-checked.svg');
 }
+
