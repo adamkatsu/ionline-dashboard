@@ -101,6 +101,9 @@ input[type="checkbox"]:not(:disabled):checked {
 .sidemenu-item:has(.submenu-active) {
     gap: 16px;
 }
+.sidemenu-item:has(.submenu-active) .sidemenu-title-wrapper img{
+    transform: rotate(180deg);
+}
 .sidemenu-title-wrapper {
     display: flex;
     flex-direction: row;
