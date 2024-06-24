@@ -26,11 +26,18 @@ a {
     min-height: 100vh;
 }
 .content {
-    margin: 0 auto;
+    width: 100%;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    align-items: stretch;
+    background-color: #F9F9F9;
 }
 .w-full {
     width: 100%;
     padding: 48px 80px;
+    min-height: 0px;
 }
 .hide {
     display: none;
@@ -67,5 +74,57 @@ input[type="checkbox"]:checked {
 input[type="checkbox"]:not(:disabled):checked {
     border-color: #F69322;
     background-image: url('../images/new/checkbox-checked.svg');
+}
+.content-left {
+    background-color: #ffffff;
+    width: 270px;
+    border-right: 1px solid #E4E4E4;
+}
+.menu-left, .settings {
+    width: 100%;
+}
+.settings {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: stretch;
+}
+.sidemenu-item {
+    padding: 16px 24px;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: stretch;
+    gap: 0px;
+    border-bottom: 1px solid #E4E4E4;
+}
+.sidemenu-item:has(.submenu-active) {
+    gap: 16px;
+}
+.sidemenu-title-wrapper {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    cursor: pointer;
+}
+.submenu-list {
+    list-style-type: none;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    gap: 8px;
+    height: 0px;
+    overflow: hidden;
+}
+.submenu-active {
+    height: fit-content;
+}
+.submenu-item {
+    color: #A6A6A7;
+}
+.submenu-link-current {
+    color: #F69322;
+    font-weight: 600;
 }
 
