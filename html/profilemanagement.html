@@ -2,10 +2,11 @@
 <html>
 <head lang="en">
     <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=Edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="shortcut icon" href="../images/favicon.ico">
-    <link rel="stylesheet" href="../css/common.css"/>
-    <link rel="stylesheet" href="../css/mobileconnection.css"/>
+    <link rel="stylesheet" href="../css/global.css"/>
+    <link rel="stylesheet" href="../css/header.css"/>
+    <link rel="stylesheet" href="../css/settingsglobal.css"/>
     <script type="text/javascript" src="../lib/jquery-3.5.1.min.js"></script>
     <script type="text/javascript" src="../lib/json_parse.js"></script>
     <script type="text/javascript" src="../lib/json2.js"></script>
@@ -14,6 +15,8 @@
     <script type="text/javascript" src="../js/common.js"></script>
     <script type="text/javascript" src="../js/encryption.js"></script>
     <script type="text/javascript" src="../js/profilemanagement.js"></script>
+    <script type="text/javascript" src="../js/header.js" defer></script>
+    <script type="text/javascript" src="../js/sidebar.js" defer></script>
     <title></title>
 </head>
 <body>
@@ -22,55 +25,204 @@
     <div class="content clearfix">
         <div class="content-left">
             <div id="menu-left" class="menu-left">
-                <div id="settings"></div>
+                <div id="settings">
+                    <div class="sidemenu-item">
+                        <div class="sidemenu-title-wrapper">
+                            <span class="sidemenu-title">Mobile Network</span>
+                            <img src="../images/new/icon-dropdown.svg" alt="">
+                        </div>
+                        <ul class="submenu-list submenu-active">
+                            <li class="submenu-item">
+                                <a class="submenu-link" href="mobileconnection.html">Mobile Connection</a>
+                            </li>
+                            <li class="submenu-item">
+                                <a class="submenu-link submenu-link-current" href="profilemanagement.html">Profile Management</a>
+                            </li>
+                            <li class="submenu-item">
+                                <a class="submenu-link" href="#">Network Settings</a>
+                            </li>
+                            <li class="submenu-item">
+                                <a class="submenu-link" href="#">USSD Service</a>
+                            </li>
+                            <li class="submenu-item">
+                                <a class="submenu-link" href="#">RF Parameters</a>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="sidemenu-item">
+                        <div class="sidemenu-title-wrapper">
+                            <span class="sidemenu-title">Internet</span>
+                            <img src="../images/new/icon-dropdown.svg" alt="">
+                        </div>
+                        <ul class="submenu-list">
+                            <li class="submenu-item">
+                                <a class="submenu-link" href="#">DHCP</a>
+                            </li>
+                    </div>
+                    <div class="sidemenu-item">
+                        <div class="sidemenu-title-wrapper">
+                            <span class="sidemenu-title">WiFi</span>
+                            <img src="../images/new/icon-dropdown.svg" alt="">
+                        </div>
+                        <ul class="submenu-list">
+                            <li class="submenu-item">
+                                <a class="submenu-link" href="#">WiFi Basic Settings</a>
+                            </li>
+                            <li class="submenu-item">
+                                <a class="submenu-link" href="#">WiFi Advanced Settings</a>
+                            </li>
+                            <li class="submenu-item">
+                                <a class="submenu-link" href="#">WPS</a>
+                            </li>
+                            <li class="submenu-item">
+                                <a class="submenu-link" href="#">WiFi Mac Filter</a>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="sidemenu-item">
+                        <div class="sidemenu-title-wrapper">
+                            <span class="sidemenu-title">Voice</span>
+                            <img src="../images/new/icon-dropdown.svg" alt="">
+                        </div>
+                        <ul class="submenu-list">
+                            <li class="submenu-item">
+                                <a class="submenu-link" href="#">Phone Settings</a>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="sidemenu-item">
+                        <div class="sidemenu-title-wrapper">
+                            <span class="sidemenu-title">VoIP</span>
+                            <img src="../images/new/icon-dropdown.svg" alt="">
+                        </div>
+                        <ul class="submenu-list">
+                            <li class="submenu-item">
+                                <a class="submenu-link" href="#">SIP Server</a>
+                            </li>
+                            <li class="submenu-item">
+                                <a class="submenu-link" href="#">SIP Account</a>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="sidemenu-item">
+                        <div class="sidemenu-title-wrapper">
+                            <span class="sidemenu-title">Security</span>
+                            <img src="../images/new/icon-dropdown.svg" alt="">
+                        </div>
+                        <ul class="submenu-list">
+                            <li class="submenu-item">
+                                <a class="submenu-link" href="#">MAC Filter</a>
+                            </li>
+                            <li class="submenu-item">
+                                <a class="submenu-link" href="#">IP Filter</a>
+                            </li>
+                            <li class="submenu-item">
+                                <a class="submenu-link" href="#">Port Forwarding</a>
+                            </li>
+                            <li class="submenu-item">
+                                <a class="submenu-link" href="#">DMZ Settings</a>
+                            </li>
+                            <li class="submenu-item">
+                                <a class="submenu-link" href="#">PIN Management</a>
+                            </li>
+                            <li class="submenu-item">
+                                <a class="submenu-link" href="#">Diagnosis</a>
+                            </li>
+                            <li class="submenu-item">
+                                <a class="submenu-link" href="#">UPnP</a>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="sidemenu-item no-border">
+                        <div class="sidemenu-title-wrapper">
+                            <span class="sidemenu-title">Management</span>
+                            <img src="../images/new/icon-dropdown.svg" alt="">
+                        </div>
+                        <ul class="submenu-list">
+                            <li class="submenu-item">
+                                <a class="submenu-link" href="#">NTP</a>
+                            </li>
+                            <li class="submenu-item">
+                                <a class="submenu-link" href="#">Device Information</a>
+                            </li>
+                            <li class="submenu-item">
+                                <a class="submenu-link" href="#">Statistics</a>
+                            </li>
+                            <li class="submenu-item">
+                                <a class="submenu-link" href="#">System Log</a>
+                            </li>
+                            <li class="submenu-item">
+                                <a class="submenu-link" href="#">System Admin</a>
+                            </li>
+                            <li class="submenu-item">
+                                <a class="submenu-link" href="#">Upgrade</a>
+                            </li>
+                            <li class="submenu-item">
+                                <a class="submenu-link" href="#">Reboot & Reset</a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
             </div>
         </div>
         <div class="content-right">
             <div class="content-box">
                 <div id="main-title" class="main-title">
-                    <h1><script type="text/javascript">getText(str_leftmenu_pm);</script></h1>
+                    <h1>Profile Management</h1>
                 </div>
                 <div class="main-content">
                     <div id="mobile-connection">
                         <form id="profile-settings">
-                            <table cellpadding="0" cellspacing="0" width="500" class="">
+                            <table cellpadding="0" cellspacing="0" class="">
                                 <tbody>
                                     <tr>
-                                        <td width="210"><script type="text/javascript">getText(str_carrier_name + common_colon);</script></td>
+                                        <td class="settings-title">Carrier Name</td>
                                         <td>
-                                            <select id="carriername" name="index" class="select-status"></select>
+                                            <select id="carriername" name="index" class="select-status">
+                                                <option value="1" selected>VodaCam (Default)</option>
+                                                <option value="2">Option 2</option>
+                                                <option value="3">Option 3</option>
+                                            </select>
                                         </td>
                                     </tr>
 									 <tr>
-                                        <td width="210"><script type="text/javascript">getText(str_authentication_type + common_colon);</script></td>
+                                        <td class="settings-title">Authentication Type</td>
                                         <td>
-                                            <select id="authenticationtype" name="authmode" class="select-status"></select>
+                                            <select id="authenticationtype" name="authmode" class="select-status">
+                                                <option value="1" selected>Auto</option>
+                                                <option value="2">Option 2</option>
+                                                <option value="3">Option 3</option>
+                                            </select>
                                         </td>
                                     </tr>
                                     <tr>
-                                        <td width="210"><script type="text/javascript">getText(str_apn + common_colon);</script></td>
+                                        <td class="settings-title">APN</td>
                                         <td>
                                             <input type="text" id="apn" name="apn" class="input-status" maxlength="31"/>
                                         </td>
                                     </tr>
                                    
                                     <tr>
-                                        <td width="210"><script type="text/javascript">getText(str_username + common_colon);</script></td>
+                                        <td class="settings-title">Username</td>
                                         <td>
                                             <input type="text" id="mobileusername" name="username" class="input-status" maxlength="31"/>
                                         </td>
                                     </tr>
                                     <tr>
-                                        <td width="210"><script type="text/javascript">getText(str_password + common_colon);</script></td>
+                                        <td class="settings-title">Password</td>
                                         <td>
                                             <input type="password" style="display:none" autocomplete="off" disabled/>
                                             <input type="password" id="mobilepassword" name="password" class="input-status" maxlength="31" autocomplete="off"/>
                                         </td>
                                     </tr>
                                     <tr>
-                                        <td width="210"><script type="text/javascript">getText(str_dialup_iptypemode + common_colon);</script></td>
+                                        <td class="settings-title">IP Type</td>
                                         <td>
-                                            <select id="ip-type" name="iptype" class="select-profile"></select>
+                                            <select id="ip-type" name="iptype" class="select-profile">
+                                                <option value="1" selected>IPV4V6</option>
+                                                <option value="2">Option 2</option>
+                                                <option value="3">Option 3</option>
+                                            </select>
                                         </td>
                                     </tr>
                                     <tr id="profiletips" style="display: none">
@@ -81,19 +233,19 @@
                             </table>
                         </form>
                         <div class="btn-area">
-                            <input id="apply" type="button" class="common-btn"/>
-                            <input id="del" type="button" class="common-btn"/>
-                            <input id="newprofile" type="button" class="common-btn"/>
+                            <button id="newprofile" type="button" class="common-btn">New Profile</button>
+                            <button id="apply" type="button" class="common-btn">Apply</button>
+                            <!-- <button id="del" type="button" class="common-btn">Delete</button> -->
                         </div>
 
                     </div>
                 </div>
             </div>
-        </div>
-    </div>
-    <div id="footer" class="footer">
-        <div id="copyright" class="copyright">
-            <span><script type="text/javascript">getText(common_copyright);</script>&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;<a href="/html/Open_Source_Software_Notice.txt"><script type="text/javascript">getText(common_opensource);</script></a></span>
+            <div id="footer" class="footer">
+                <div id="copyright" class="copyright">
+                    <span><a href="/html/Open_Source_Software_Notice.txt">COPYRIGHT © 2023 | Open Source Notice</a></span>
+                </div>
+            </div>
         </div>
     </div>
 </div>

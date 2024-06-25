@@ -178,9 +178,11 @@ input[type="checkbox"]:not(:disabled):checked {
 
 .main-content {
     width: 100%;
+    height: 100%;
 }
 .main-content td {
     position: relative;
+    padding-bottom: 16px;
 }
 .main-content td:has(select) {
     width: 370px;
@@ -199,6 +201,12 @@ input[type="checkbox"]:not(:disabled):checked {
     -webkit-appearance:none; /* Safari and Chrome */
     appearance:none;
 }
+.main-content td input {
+    width: 100%;
+    padding: 12px;
+    border-radius: 8px;
+    border: 1px solid #E4E4E4;
+}
 .main-content td:has(select)::after {
     content: '';
     display: block;
@@ -210,12 +218,23 @@ input[type="checkbox"]:not(:disabled):checked {
     position: absolute;
     z-index: 3;
     right: 12px;
-    bottom: 20px;
+    bottom: 36px;
+}
+.btn-area {
+    display: flex;
+    flex-direction: row;
+    gap: 8px;
+    margin: auto 0 0 auto;
+    width: fit-content;
+    height: fit-content;
 }
 #mobile-connection {
+    height: 100%;
     display: flex;
     flex-direction: column;
-    justify-content: flex-start;
-    align-items: flex-start;
-    gap: 8px;
+    justify-content: space-between;
+    
+}
+.common-btn {
+    padding: 16px 14px;
 }
