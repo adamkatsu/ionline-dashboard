@@ -13,9 +13,9 @@
     <script type="text/javascript" src="../js/languagemanage.js"></script>
     <script type="text/javascript" src="../js/tools.js"></script>	
     <script type="text/javascript" src="../js/common.js"></script>
-    <script type="text/javascript" src="../js/header.js"></script>
-    <script type="text/javascript" src="../js/sidebar.js"></script>
     <script type="text/javascript" src="../js/mobileconnection.js"></script>
+    <script type="text/javascript" src="../js/header.js" defer></script>
+    <script type="text/javascript" src="../js/sidebar.js" defer></script>
     <title></title>
 </head>
 <body>
@@ -30,12 +30,12 @@
                             <span class="sidemenu-title">Mobile Network</span>
                             <img src="../images/new/icon-dropdown.svg" alt="">
                         </div>
-                        <ul class="submenu-list">
+                        <ul class="submenu-list submenu-active">
                             <li class="submenu-item">
-                                <a class="submenu-link" href="#">Mobile Connection</a>
+                                <a class="submenu-link submenu-link-current" href="#">Mobile Connection</a>
                             </li>
                             <li class="submenu-item">
-                                <a class="submenu-link" href="#">Mobile Management</a>
+                                <a class="submenu-link" href="profilemanagement.html">Profile Management</a>
                             </li>
                             <li class="submenu-item">
                                 <a class="submenu-link" href="#">Network Settings</a>
@@ -108,7 +108,7 @@
                             <span class="sidemenu-title">Security</span>
                             <img src="../images/new/icon-dropdown.svg" alt="">
                         </div>
-                        <ul class="submenu-list submenu-active">
+                        <ul class="submenu-list">
                             <li class="submenu-item">
                                 <a class="submenu-link" href="#">MAC Filter</a>
                             </li>
@@ -116,7 +116,7 @@
                                 <a class="submenu-link" href="#">IP Filter</a>
                             </li>
                             <li class="submenu-item">
-                                <a class="submenu-link submenu-link-current" href="#">Port Forwarding</a>
+                                <a class="submenu-link" href="#">Port Forwarding</a>
                             </li>
                             <li class="submenu-item">
                                 <a class="submenu-link" href="#">DMZ Settings</a>
@@ -172,16 +172,14 @@
                 <div class="main-content">
                     <div id="mobile-connection">
                         <form id="datasettings">
-                            <table cellpadding="0" cellspacing="0" width="500" class="">
+                            <table cellpadding="0" cellspacing="0" class="">
                                 <tbody>
                                     <tr>
-                                        <td width="210">
-                                            <span>Mobile Data</span>
-                                        </td>
+                                        <td class="settings-title">Mobile Data</td>
                                         <td>
                                             <select id="mobiledata" class="select-status">
-                                                <option value="1"></option>
-                                                <option value="0"></option>
+                                                <option value="1" selected>On</option>
+                                                <option value="0">Off</option>
                                             </select>
                                         </td>
                                     </tr>
@@ -189,16 +187,14 @@
                             </table>
                         </form>
                         <form id="roamingsettings">
-                            <table cellpadding="0" cellspacing="0" width="500" class="">
+                            <table cellpadding="0" cellspacing="0" class="">
                                 <tbody>
                                     <tr>
-                                        <td width="210">
-                                            <span>Data Roaming</span>
-                                        </td>
+                                        <td class="settings-title">Data Roaming</td>
                                         <td>
                                             <select id="dataroaming" class="select-status">
-                                                <option value="1" ></option>
-                                                <option value="0" ></option>
+                                                <option value="1" >Enable</option>
+                                                <option value="0" selected>Disable</option>
                                             </select>
                                         </td>
                                     </tr>

@@ -20,6 +20,9 @@ a {
     text-decoration: none;
     color: inherit;
 }
+table {
+    border-collapse: collapse;
+}
 .container {
     display: flex;
     flex-direction: column;
@@ -158,7 +161,7 @@ input[type="checkbox"]:not(:disabled):checked {
     flex-direction: column;
     justify-content: flex-start;
     align-items: flex-start;
-    gap: 16px;
+    gap: 24px;
     background-color: #ffffff;
     border-radius: 8px;
     border: 1px solid #E4E4E4;
@@ -171,4 +174,48 @@ input[type="checkbox"]:not(:disabled):checked {
 .main-title h1 {
     color: #4D4D4F;
     font-size: 24px;
+}
+
+.main-content {
+    width: 100%;
+}
+.main-content td {
+    position: relative;
+}
+.main-content td:has(select) {
+    width: 370px;
+}
+.main-content td.settings-title {
+    width: 270px;
+    height: 100%;
+    vertical-align: middle;
+}
+.main-content td select{
+    width: 100%;
+    padding: 12px;
+    border-radius: 8px;
+    border: 1px solid #E4E4E4;
+    -moz-appearance:none; /* Firefox */
+    -webkit-appearance:none; /* Safari and Chrome */
+    appearance:none;
+}
+.main-content td:has(select)::after {
+    content: '';
+    display: block;
+    width: 8px;
+    height: 8px;
+    background-image: url(../images/new/icon-dropdown.svg);
+    background-repeat: no-repeat;
+    background-position: center;
+    position: absolute;
+    z-index: 3;
+    right: 12px;
+    bottom: 20px;
+}
+#mobile-connection {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: flex-start;
+    gap: 8px;
 }
