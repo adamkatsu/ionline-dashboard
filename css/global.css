@@ -145,16 +145,30 @@ input[type="checkbox"]:not(:disabled):checked {
     width: 100%;
     display: flex;
     flex-direction: column;
-    justify-content: center;
+    justify-content: flex-start;
     align-items: center;
     gap: 32px;
 }
 .content-box {
     width: 100%;
     max-width: 970px;
+    padding: 24px;
     height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: flex-start;
+    gap: 16px;
     background-color: #ffffff;
     border-radius: 8px;
     border: 1px solid #E4E4E4;
+    max-height: 800px;
     box-shadow: 0px 2px 4px 0px rgba(0, 0, 0, 0.10);
+}
+.content-right .footer {
+    margin: 0 auto;
+}
+.main-title h1 {
+    color: #4D4D4F;
+    font-size: 24px;
 }
