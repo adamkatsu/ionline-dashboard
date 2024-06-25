@@ -233,8 +233,19 @@ input[type="checkbox"]:not(:disabled):checked {
     display: flex;
     flex-direction: column;
     justify-content: space-between;
-    
+
 }
 .common-btn {
-    padding: 16px 14px;
+    padding: 14px 16px;
+    border: 1px solid #F69322;
+    border-radius: 8px;
+    min-width: 100px;
+}
+.common-btn.white {
+    background-color: #ffffff;
+    color: #F69322;
+}
+.common-btn.orange {
+    background-color: #F69322;
+    color: #ffffff;
 }
