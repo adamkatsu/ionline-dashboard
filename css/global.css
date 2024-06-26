@@ -20,8 +20,11 @@ a {
     text-decoration: none;
     color: inherit;
 }
-table {
+table, tbody, tr, th, td {
     border-collapse: collapse;
+}
+button {
+    cursor: pointer;
 }
 .container {
     display: flex;
@@ -248,4 +251,49 @@ input[type="checkbox"]:not(:disabled):checked {
 .common-btn.orange {
     background-color: #F69322;
     color: #ffffff;
+}
+.table-wrapper {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: flex-start;
+    width: 100%;
+    height: fit-content;
+    border: 1px solid #E4E4E4;
+    border-radius: 8px;
+}
+.table-data table {
+    width: 100%;
+    border-radius: 8px;
+    overflow: hidden;
+}
+.table-data tr {
+    text-align: left;
+    overflow: hidden;
+}
+.content-box.table-data td,
+.content-box.table-data th {
+    border: 1px solid #E4E4E4;
+    padding: 16px;
+    overflow: hidden;
+    font-size: 14px;
+}
+.content-box td:first-child {
+    border-left: none;
+}
+.content-box td:last-child {
+    border-right: none;
+}
+.content-box tr:last-child td {
+    border-bottom: none;
+}
+.content-box.table-data th {
+    background-color: #F9F9F9;
+    border-top: none;
+}
+.content-box.table-data th:first-child {
+    border-left: none;
+}
+.content-box.table-data th:last-child {
+    border-right: none;
 }
