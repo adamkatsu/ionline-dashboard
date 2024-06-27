@@ -84,6 +84,10 @@ input[type="checkbox"]:not(:disabled):checked {
     border-color: #F69322;
     background-image: url('../images/new/checkbox-checked.svg');
 }
+
+/* Sidebar */
+
+
 .content-left {
     background-color: #ffffff;
     width: 100%;
@@ -146,6 +150,9 @@ input[type="checkbox"]:not(:disabled):checked {
     color: #F69322;
     font-weight: 600;
 }
+
+/* Main Content */
+
 .content-right {
     padding: 60px 60px 0;
     width: 100%;
@@ -252,6 +259,9 @@ input[type="checkbox"]:not(:disabled):checked {
     background-color: #F69322;
     color: #ffffff;
 }
+
+/* Network - RF Parameters */
+
 .table-wrapper {
     display: flex;
     flex-direction: column;
@@ -300,7 +310,7 @@ input[type="checkbox"]:not(:disabled):checked {
 
 /* Network - USSD */
 
-.ussd-content {
+.height-full {
     display: flex;
     flex-direction: column;
     justify-content: flex-start;
@@ -336,4 +346,16 @@ input[type="checkbox"]:not(:disabled):checked {
     right: 4px;
     height: 36px;
     padding: 8px 16px;
+}
+.input-wrapper {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    align-items: center;
+}
+.inputip {
+    margin: 0 8px;
+}
+.inputip:first-child {
+    margin-left: 0;
 }

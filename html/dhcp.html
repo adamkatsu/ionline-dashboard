@@ -2,10 +2,11 @@
 <html>
 <head lang="en">
     <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=Edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="shortcut icon" href="../images/favicon.ico">
-    <link rel="stylesheet" href="../css/common.css"/>
-    <link rel="stylesheet" href="../css/dhcp.css"/>
+    <link rel="stylesheet" href="../css/global.css"/>
+    <link rel="stylesheet" href="../css/header.css"/>
+    <link rel="stylesheet" href="../css/settingsglobal.css"/>
     <script type="text/javascript" src="../lib/jquery-3.5.1.min.js"></script>
     <script type="text/javascript" src="../lib/json_parse.js"></script>
     <script type="text/javascript" src="../lib/json2.js"></script>
@@ -13,6 +14,8 @@
     <script type="text/javascript" src="../js/tools.js"></script>	
     <script type="text/javascript" src="../js/common.js"></script>
     <script type="text/javascript" src="../js/dhcp.js"></script>
+    <script type="text/javascript" src="../js/header.js" defer></script>
+    <script type="text/javascript" src="../js/sidebar.js" defer></script>
     <title></title>
 </head>
 <body>
@@ -21,57 +24,207 @@
     <div class="content clearfix">
         <div class="content-left">
             <div id="menu-left" class="menu-left">
-                <div id="settings"></div>
+                <div id="settings">
+                    <div class="sidemenu-item">
+                        <div class="sidemenu-title-wrapper">
+                            <span class="sidemenu-title">Mobile Network</span>
+                            <img src="../images/new/icon-dropdown.svg" alt="">
+                        </div>
+                        <ul class="submenu-list submenu-active">
+                            <li class="submenu-item">
+                                <a class="submenu-link submenu-link-current" href="#">Mobile Connection</a>
+                            </li>
+                            <li class="submenu-item">
+                                <a class="submenu-link" href="profilemanagement.html">Profile Management</a>
+                            </li>
+                            <li class="submenu-item">
+                                <a class="submenu-link" href="networksetting.html">Network Settings</a>
+                            </li>
+                            <li class="submenu-item">
+                                <a class="submenu-link" href="#">USSD Service</a>
+                            </li>
+                            <li class="submenu-item">
+                                <a class="submenu-link" href="rfparameters.html">RF Parameters</a>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="sidemenu-item">
+                        <div class="sidemenu-title-wrapper">
+                            <span class="sidemenu-title">Internet</span>
+                            <img src="../images/new/icon-dropdown.svg" alt="">
+                        </div>
+                        <ul class="submenu-list">
+                            <li class="submenu-item">
+                                <a class="submenu-link" href="dhcp.html">DHCP</a>
+                            </li>
+                    </div>
+                    <div class="sidemenu-item">
+                        <div class="sidemenu-title-wrapper">
+                            <span class="sidemenu-title">WiFi</span>
+                            <img src="../images/new/icon-dropdown.svg" alt="">
+                        </div>
+                        <ul class="submenu-list">
+                            <li class="submenu-item">
+                                <a class="submenu-link" href="wlansettings.html">WiFi Basic Settings</a>
+                            </li>
+                            <li class="submenu-item">
+                                <a class="submenu-link" href="wifiadvanced.html">WiFi Advanced Settings</a>
+                            </li>
+                            <li class="submenu-item">
+                                <a class="submenu-link" href="wps.html">WPS</a>
+                            </li>
+                            <li class="submenu-item">
+                                <a class="submenu-link" href="wlanmacfilter.html">WiFi Mac Filter</a>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="sidemenu-item">
+                        <div class="sidemenu-title-wrapper">
+                            <span class="sidemenu-title">Voice</span>
+                            <img src="../images/new/icon-dropdown.svg" alt="">
+                        </div>
+                        <ul class="submenu-list">
+                            <li class="submenu-item">
+                                <a class="submenu-link" href="phonesettings.html">Phone Settings</a>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="sidemenu-item">
+                        <div class="sidemenu-title-wrapper">
+                            <span class="sidemenu-title">VoIP</span>
+                            <img src="../images/new/icon-dropdown.svg" alt="">
+                        </div>
+                        <ul class="submenu-list">
+                            <li class="submenu-item">
+                                <a class="submenu-link" href="sipaccount.html">SIP Server</a>
+                            </li>
+                            <li class="submenu-item">
+                                <a class="submenu-link" href="sipserver.html">SIP Account</a>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="sidemenu-item">
+                        <div class="sidemenu-title-wrapper">
+                            <span class="sidemenu-title">Security</span>
+                            <img src="../images/new/icon-dropdown.svg" alt="">
+                        </div>
+                        <ul class="submenu-list">
+                            <li class="submenu-item">
+                                <a class="submenu-link" href="macfilter.html">MAC Filter</a>
+                            </li>
+                            <li class="submenu-item">
+                                <a class="submenu-link" href="ipfilter.html">IP Filter</a>
+                            </li>
+                            <li class="submenu-item">
+                                <a class="submenu-link" href="portforwarding.html">Port Forwarding</a>
+                            </li>
+                            <li class="submenu-item">
+                                <a class="submenu-link" href="dmzsettings.html">DMZ Settings</a>
+                            </li>
+                            <li class="submenu-item">
+                                <a class="submenu-link" href="pinmanagement.html">PIN Management</a>
+                            </li>
+                            <li class="submenu-item">
+                                <a class="submenu-link" href="diagnosis.html">Diagnosis</a>
+                            </li>
+                            <li class="submenu-item">
+                                <a class="submenu-link" href="upnp.html">UPnP</a>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="sidemenu-item no-border">
+                        <div class="sidemenu-title-wrapper">
+                            <span class="sidemenu-title">Management</span>
+                            <img src="../images/new/icon-dropdown.svg" alt="">
+                        </div>
+                        <ul class="submenu-list">
+                            <li class="submenu-item">
+                                <a class="submenu-link" href="sntp.html">NTP</a>
+                            </li>
+                            <li class="submenu-item">
+                                <a class="submenu-link" href="deviceinfo.html">Device Information</a>
+                            </li>
+                            <li class="submenu-item">
+                                <a class="submenu-link" href="statistics.html">Statistics</a>
+                            </li>
+                            <li class="submenu-item">
+                                <a class="submenu-link" href="systemlog.html">System Log</a>
+                            </li>
+                            <li class="submenu-item">
+                                <a class="submenu-link" href="systemadmin.html">System Admin</a>
+                            </li>
+                            <li class="submenu-item">
+                                <a class="submenu-link" href="upgrade.html">Upgrade</a>
+                            </li>
+                            <li class="submenu-item">
+                                <a class="submenu-link" href="rebootreset.html">Reboot & Reset</a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
             </div>
         </div>
         <div class="content-right">
             <div class="content-box">
                 <div id="main-title" class="main-title">
-                    <h1><script type="text/javascript">getText(str_dhcp_server);</script></h1>
+                    <h1>DHCP</h1>
                 </div>
-                <div class="main-content">
+                <div class="main-content height-full">
                     <form id="dhcpsettings">
                         <table cellpadding="0" cellspacing="0" width="500" class="">
                             <tbody>
                             <tr>
-                                <td width="210"><script type="text/javascript">getText(str_wlan_dhcp_server + common_colon);</script></td>
+                                <td width="270" class="settings-title">DHCP Server</td>
                                 <!--<td id="serverstatus">-->
                                     <!--<input id="dhcpon" type="radio" value="1" name="dhcpturn"/><span><script type="text/javascript">getText(common_enable);</script></span>-->
                                     <!--<input id="dhcpoff" type="radio" value="0" name="dhcpturn"/><span><script type="text/javascript">getText(common_disable);</script></span>-->
                                 <!--</td>-->
                                 <td>
-                                    <select id="dhcpmode" class="select-status"></select>
+                                    <select id="dhcpmode" class="select-status">
+                                        <option value="1">Select</option>
+                                        <option value="2">Option 1</option>
+                                        <option value="3">Option 2</option>
+                                    </select>
                                 </td>
                             </tr>
                             <tr>
-                                <td width="210"><script type="text/javascript">getText(str_wlan_dhcp_ipddr + common_colon);</script></td>
+                                <td width="270" class="settings-title">IP Address</td>
                                 <td>
-                                    <span id="ipaddr1">192</span><span>.</span>
-                                    <span id="ipaddr2">168</span><span>.</span>
-                                    <input id="ipaddr3" name="ipaddr3" class="inputip" type="text" /><span>.</span>
-                                    <input id="ipaddr4" name="ipaddr4" class="inputip" type="text" />
+                                    <div class="input-wrapper">
+                                        <span id="ipaddr1">192</span>
+                                        <span>.</span>
+                                        <span id="ipaddr2">168</span>
+                                        <span>.</span>
+                                        <input id="ipaddr3" name="ipaddr3" class="inputip" type="text" /><span>.</span>
+                                        <input id="ipaddr4" name="ipaddr4" class="inputip" type="text" />
+                                    </div>
                                 </td>
                             </tr>
                             <tr id="iptips" style="display:none;">
-                                <td width="210"></td>
+                                <td width="270"></td>
                                 <td id="ipaddrtips"></td>
                             </tr>
                             <tr>
-                                <td width="210"><script type="text/javascript">getText(str_wlan_dhcp_iprange + common_colon);</script></td>
+                                <td width="270" class="settings-title">DHCP IP Range</td>
                                 <td>
-                                    <input id="dhcpstart" type="text" maxlength="3" name="dhcpstart" class="inputip" />
-                                    <span><script type="text/javascript">getText(common_to);</script></span>
-                                    <input id="dhcpend" name="dhcpend" class="inputip" type="text" />
+                                    <div class="input-wrapper">
+                                        <input id="dhcpstart" type="text" maxlength="3" name="dhcpstart" class="inputip" />
+                                        <span>to</span>
+                                        <input id="dhcpend" name="dhcpend" class="inputip" type="text" />
+                                    </div>
                                 </td>
                             </tr>
                             <tr id="iprange">
-                                <td width="210"></td>
+                                <td width="270"></td>
                                 <td id="iprangetips"></td>
                             </tr>
                             <tr>
-                                <td width="210"><script type="text/javascript">getText(str_wlan_dhcp_leasetime + common_colon);</script></td>
+                                <td width="270" class="settings-title">DHCP Lease Time</td>
                                 <td>
-                                    <input id="leasetime" name="leasetime" type="text" /><span><script type="text/javascript">getText(str_seconds);</script></span>
+                                    <div class="input-wrapper">
+                                        <input id="leasetime" name="leasetime" type="text" style="margin-right: 8px;"/>
+                                        <span>Seconds</span>
+                                    </div>
                                 </td>
                             </tr>
                             <tr>
@@ -82,15 +235,15 @@
                         </table>
                     </form>
                     <div class="btn-area">
-                        <input id="apply" type="button" class="common-btn"/>
+                        <button id="apply" type="button" class="common-btn orange">Apply</button>
                     </div>
                 </div>
             </div>
-        </div>
-    </div>
-    <div id="footer" class="footer">
-        <div id="copyright" class="copyright">
-            <span><script type="text/javascript">getText(common_copyright);</script>&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;<a href="/html/Open_Source_Software_Notice.txt"><script type="text/javascript">getText(common_opensource);</script></a></span>
+            <div id="footer" class="footer">
+                <div id="copyright" class="copyright">
+                    <span><a href="/html/Open_Source_Software_Notice.txt">COPYRIGHT © 2023 | Open Source Notice</a></span>
+                </div>
+            </div>
         </div>
     </div>
 </div>
