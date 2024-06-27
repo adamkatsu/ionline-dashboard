@@ -127,35 +127,3 @@
     border-radius: 8px;
     border: none;
 }
-input[type="checkbox"].password-visibility {
-    width: 24px;
-    height: 24px;
-    border: none;
-    appearance: none;
-    background-color: transparent;
-    outline: none;
-    transition: outline 0.1s;
-    cursor: pointer;
-    background-image: url('../images/new/icon-eye-default.svg');
-    background-size: 18px;
-    background-repeat: no-repeat;
-    background-position: center center;
-    position: absolute;
-    right: 12px;
-    top: 34px;
-}
-input[type="checkbox"].password-visibility:checked {
-    background-color: transparent;
-    padding: 0px;
-    background-size: 18px;
-    background-repeat: no-repeat;
-    background-position: center center;
-}
-input[type="checkbox"].password-visibility:not(:disabled):checked {
-    background-image: url('../images/new/icon-eye-active.svg');
-    background-color: transparent;
-    padding: 0px;
-    background-size: 18px;
-    background-repeat: no-repeat;
-    background-position: center center;
-}

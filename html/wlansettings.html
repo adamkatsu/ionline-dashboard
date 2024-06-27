@@ -2,18 +2,20 @@
 <html>
 <head lang="en">
     <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=Edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="shortcut icon" href="../images/favicon.ico">
-    <link rel="stylesheet" href="../css/common.css"/>
-    <link rel="stylesheet" href="../css/wlansettings.css"/>
+    <link rel="stylesheet" href="../css/global.css"/>
+    <link rel="stylesheet" href="../css/header.css"/>
+    <link rel="stylesheet" href="../css/settingsglobal.css"/>
     <script type="text/javascript" src="../lib/jquery-3.5.1.min.js"></script>
     <script type="text/javascript" src="../lib/json_parse.js"></script>
     <script type="text/javascript" src="../lib/json2.js"></script>
     <script type="text/javascript" src="../js/languagemanage.js"></script>
     <script type="text/javascript" src="../js/tools.js"></script>
     <script type="text/javascript" src="../js/common.js"></script>
-    <script type="text/javascript" src="../js/encryption.js"></script>
-    <script type="text/javascript" src="../js/wlansettings.js"></script>
+    <script type="text/javascript" src="../js/global.js" defer></script>
+    <script type="text/javascript" src="../js/header.js" defer></script>
+    <script type="text/javascript" src="../js/sidebar.js" defer></script>
     <title></title>
 
 </head>
@@ -23,50 +25,189 @@
     <div class="content">
         <div class="content-left">
             <div id="menu-left" class="menu-left">
-                <div id="settings"></div>
+                <div id="settings">
+                    <div class="sidemenu-item">
+                        <div class="sidemenu-title-wrapper">
+                            <span class="sidemenu-title">Mobile Network</span>
+                            <img src="../images/new/icon-dropdown.svg" alt="">
+                        </div>
+                        <ul class="submenu-list">
+                            <li class="submenu-item">
+                                <a class="submenu-link" href="#">Mobile Connection</a>
+                            </li>
+                            <li class="submenu-item">
+                                <a class="submenu-link" href="profilemanagement.html">Profile Management</a>
+                            </li>
+                            <li class="submenu-item">
+                                <a class="submenu-link" href="networksetting.html">Network Settings</a>
+                            </li>
+                            <li class="submenu-item">
+                                <a class="submenu-link" href="#">USSD Service</a>
+                            </li>
+                            <li class="submenu-item">
+                                <a class="submenu-link" href="rfparameters.html">RF Parameters</a>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="sidemenu-item">
+                        <div class="sidemenu-title-wrapper">
+                            <span class="sidemenu-title">Internet</span>
+                            <img src="../images/new/icon-dropdown.svg" alt="">
+                        </div>
+                        <ul class="submenu-list">
+                            <li class="submenu-item">
+                                <a class="submenu-link" href="dhcp.html">DHCP</a>
+                            </li>
+                    </div>
+                    <div class="sidemenu-item">
+                        <div class="sidemenu-title-wrapper">
+                            <span class="sidemenu-title">WiFi</span>
+                            <img src="../images/new/icon-dropdown.svg" alt="">
+                        </div>
+                        <ul class="submenu-list submenu-active">
+                            <li class="submenu-item submenu-link-current">
+                                <a class="submenu-link" href="wlansettings.html">WiFi Basic Settings</a>
+                            </li>
+                            <li class="submenu-item">
+                                <a class="submenu-link" href="wifiadvanced.html">WiFi Advanced Settings</a>
+                            </li>
+                            <li class="submenu-item">
+                                <a class="submenu-link" href="wps.html">WPS</a>
+                            </li>
+                            <li class="submenu-item">
+                                <a class="submenu-link" href="wlanmacfilter.html">WiFi Mac Filter</a>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="sidemenu-item">
+                        <div class="sidemenu-title-wrapper">
+                            <span class="sidemenu-title">Voice</span>
+                            <img src="../images/new/icon-dropdown.svg" alt="">
+                        </div>
+                        <ul class="submenu-list">
+                            <li class="submenu-item">
+                                <a class="submenu-link" href="phonesettings.html">Phone Settings</a>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="sidemenu-item">
+                        <div class="sidemenu-title-wrapper">
+                            <span class="sidemenu-title">VoIP</span>
+                            <img src="../images/new/icon-dropdown.svg" alt="">
+                        </div>
+                        <ul class="submenu-list">
+                            <li class="submenu-item">
+                                <a class="submenu-link" href="sipaccount.html">SIP Server</a>
+                            </li>
+                            <li class="submenu-item">
+                                <a class="submenu-link" href="sipserver.html">SIP Account</a>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="sidemenu-item">
+                        <div class="sidemenu-title-wrapper">
+                            <span class="sidemenu-title">Security</span>
+                            <img src="../images/new/icon-dropdown.svg" alt="">
+                        </div>
+                        <ul class="submenu-list">
+                            <li class="submenu-item">
+                                <a class="submenu-link" href="macfilter.html">MAC Filter</a>
+                            </li>
+                            <li class="submenu-item">
+                                <a class="submenu-link" href="ipfilter.html">IP Filter</a>
+                            </li>
+                            <li class="submenu-item">
+                                <a class="submenu-link" href="portforwarding.html">Port Forwarding</a>
+                            </li>
+                            <li class="submenu-item">
+                                <a class="submenu-link" href="dmzsettings.html">DMZ Settings</a>
+                            </li>
+                            <li class="submenu-item">
+                                <a class="submenu-link" href="pinmanagement.html">PIN Management</a>
+                            </li>
+                            <li class="submenu-item">
+                                <a class="submenu-link" href="diagnosis.html">Diagnosis</a>
+                            </li>
+                            <li class="submenu-item">
+                                <a class="submenu-link" href="upnp.html">UPnP</a>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="sidemenu-item no-border">
+                        <div class="sidemenu-title-wrapper">
+                            <span class="sidemenu-title">Management</span>
+                            <img src="../images/new/icon-dropdown.svg" alt="">
+                        </div>
+                        <ul class="submenu-list">
+                            <li class="submenu-item">
+                                <a class="submenu-link" href="sntp.html">NTP</a>
+                            </li>
+                            <li class="submenu-item">
+                                <a class="submenu-link" href="deviceinfo.html">Device Information</a>
+                            </li>
+                            <li class="submenu-item">
+                                <a class="submenu-link" href="statistics.html">Statistics</a>
+                            </li>
+                            <li class="submenu-item">
+                                <a class="submenu-link" href="systemlog.html">System Log</a>
+                            </li>
+                            <li class="submenu-item">
+                                <a class="submenu-link" href="systemadmin.html">System Admin</a>
+                            </li>
+                            <li class="submenu-item">
+                                <a class="submenu-link" href="upgrade.html">Upgrade</a>
+                            </li>
+                            <li class="submenu-item">
+                                <a class="submenu-link" href="rebootreset.html">Reboot & Reset</a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
             </div>
         </div>
         <div class="content-right">
             <div class="content-box">
-
-
+                <div id="main-title" class="main-title">
+                    <h1>WiFi Basic Settings</h1>
+                </div>
                 <div class="main-content">
-                    <form action="" >
-                        <table cellpadding="0" cellspacing="0" width="500" class="">
-                            <tr>
-                                <td width="210"><script type="text/javascript">getText(str_wifi_5GPrefer + common_colon);</script></td>
-                                <td>
-                                    <input type="checkbox" id="prefer" name="prefer" autocomplate="off">
-                                </td>
-                            </tr>
-                        </table>
-                    </form>
-                    <div id="wifi24title" class="main-title" style="width: 690px;padding: 30px 0px;overflow: hidden;">
-                        <h1><script type="text/javascript">getText(str_wireless_2GHz);</script></h1>
-                    </div>
                     <form id="wifi24g">
                         <table cellpadding="0" cellspacing="0" width="500" class="">
                             <input type="hidden" name="freqband" value="0"/>
                             <tr>
-                                <td width="210"><script type="text/javascript">getText(str_wireless_status + common_colon);</script></td>
+                                <td width="270">5G Prefer</td>
                                 <td>
-                                    <select id="status24"  name="ssidstatus" class="select-status"></select>
+                                    <div class="checkbox-name-wrapper">
+                                        <input type="checkbox" id="prefer" name="prefer" autocomplate="off"> 
+                                        <span>Enable</span>
+                                    </div>
                                 </td>
                             </tr>
                             <tr>
-                                <td width="210"><script type="text/javascript">getText(str_wireless_ssid + common_colon);</script></td>
+                                <td width="270">Status</td>
                                 <td>
-                                    <input id="ssidname24" type="text" name="ssid" maxlength="32" class="input-status"/>
+                                    <select id="status24"  name="ssidstatus" class="select-status">
+                                        <option value="1">Enable</option>
+                                        <option value="2">Disable</option>
+                                    </select>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td width="270">WiFi Name (SSID)</td>
+                                <td>
+                                    <input id="ssidname24" type="text" name="ssid" maxlength="32" class="input-status" placeholder="4G-CPE-ECF3"/>
                                 </td>
                             </tr>
                             <tr id="ssidtip24" style="display: none">
-                                <td width="210"></td>
+                                <td width="270">Security Mode</td>
                                 <td id="ssidtipstring24" class="errortips"></td>
                             </tr>
                             <tr>
-                                <td width="210"><script type="text/javascript">getText(str_wireless_security_mode + common_colon);</script></td>
-                                <td>
-                                    <select   id="securitymode24" name="securitymode" class="select-status"></select>
+                                <td style="display: none;">
+                                    <select   id="securitymode24" name="securitymode" class="select-status">
+                                        <option value="1">WPA2-PSK</option>
+                                        <option value="2">Option 2</option>
+                                    </select>
                                 </td>
                             </tr>
                             <tr style="display: none">
@@ -74,58 +215,58 @@
                                 <td id="securitymodetips24"></td>
                             </tr>
                             <tr>
-                                <td width="210"><script type="text/javascript">getText(str_wireless_password + common_colon);</script></td>
-                                <td id="yanjing">
+                                <td width="270">Password</td>
+                                <td id="yanjing" style="position: relative;">
                                     <input type="password" style="display:none" autocomplete="off" disabled/>
-                                    <img src="../images/yanjing_bi.png" alt="" onclick="ShowPsw()"  id="biyanjing"/>
-                                    <input id="securitykey24" type="password" maxlength="63" name="securitykey"  class="input-status" autocomplete="off"/>
+                                    <input id="securitykey24" type="password" maxlength="63" name="securitykey"  class="input-status password-toggle" autocomplete="off"/>
+                                    <input type="checkbox" class="password-visibility" onclick="showPassword()">
                                 </td>
                             </tr>
                             <tr class="pwdColor hide" style="height: 20px;">
-                                <td><b ><script type="text/javascript">getText(str_password_strength);</script></b></td>
+                                <td><b ></b></td>
                                 <td>
-                                    <span class="c1"><script type="text/javascript">getText(str_cryptographic_strength_weak);</script></span>
-                                    <span class="c2"><script type="text/javascript">getText(str_cryptographic_strength_middle);</script></span>
-                                    <span class="c3"><script type="text/javascript">getText(str_cryptographic_strength_powerful);</script></span>
+                                    <span class="c1"></span>
+                                    <span class="c2"></span>
+                                    <span class="c3"></span>
                                 </td>
                             </tr>
                             <tr id="wpatip24" style="display: none">
-                                <td width="210"></td>
+                                <td width="270"></td>
                                 <td id="wpatipstring24" class="errortips"></td>
                             </tr>
 
                             <tr>
-                                <td width="210"><script type="text/javascript">getText(str_wireless_visibility_status + common_colon);</script></td>
+                                <td width="270">Visibility Status</td>
                                 <td>
-                                    <select id="broadcast24" name="broadcast" class="select-status"></select>
+                                    <select id="broadcast24" name="broadcast" class="select-status">
+                                        <option value="1">Enable</option>
+                                        <option value="2">Disable</option>
+                                    </select>
                                 </td>
                             </tr>
                         </table>
                     </form>
-                    <div id="wifi5title" class="main-titles" style="width: 690px;padding: 30px 0px;overflow: hidden;">
-                        <h1 style="float: left;color: rgb(14,100,142)"><script type="text/javascript">getText(str_wireless_5GHz);</script></h1>
-                    </div>
-                    <form id="wifi5g">
+                    <form id="wifi5g" style="display: none;">
                         <table cellpadding="0" cellspacing="0" width="500" class="">
                             <input type="hidden" name="freqband" value="1"/>
                             <tr>
-                                <td width="210"><script type="text/javascript">getText(str_wireless_status + common_colon);</script></td>
+                                <td width="270"><script type="text/javascript">getText(str_wireless_status + common_colon);</script></td>
                                 <td>
                                     <select id="status5"  name="ssidstatus" class="select-status"></select>
                                 </td>
                             </tr>
                             <tr>
-                                <td width="210"><script type="text/javascript">getText(str_wireless_ssid + common_colon);</script></td>
+                                <td width="270"><script type="text/javascript">getText(str_wireless_ssid + common_colon);</script></td>
                                 <td>
                                     <input id="ssidname5" type="text" name="ssid" maxlength="32" class="input-status"/>
                                 </td>
                             </tr>
                             <tr id="ssidtip5" style="display: none">
-                                <td width="210"></td>
+                                <td width="270"></td>
                                 <td id="ssidtipstring5" class="errortips"></td>
                             </tr>
                             <tr>
-                                <td width="210"><script type="text/javascript">getText(str_wireless_security_mode + common_colon);</script></td>
+                                <td width="270"><script type="text/javascript">getText(str_wireless_security_mode + common_colon);</script></td>
                                 <td>
                                     <select   id="securitymode5" name="securitymode" class="select-status"></select>
                                 </td>
@@ -135,7 +276,7 @@
                                 <td id="securitymodetips5"></td>
                             </tr>
                             <tr>
-                                <td width="210"><script type="text/javascript">getText(str_wireless_password + common_colon);</script></td>
+                                <td width="270"><script type="text/javascript">getText(str_wireless_password + common_colon);</script></td>
                                 <td id="psd_yan">
                                     <input type="password" style="display:none" autocomplete="off" disabled/>
                                     <img src="../images/yanjing_bi.png" alt="" onclick="psdshow()"  id="yanjing_img"/>
@@ -151,12 +292,12 @@
                                 </td>
                             </tr>
                             <tr id="wpatip5" style="display: none">
-                                <td width="210"></td>
+                                <td width="270"></td>
                                 <td id="wpatipstring5" class="errortips"></td>
                             </tr>
 
                             <tr>
-                                <td width="210"><script type="text/javascript">getText(str_wireless_visibility_status + common_colon);</script></td>
+                                <td width="270"><script type="text/javascript">getText(str_wireless_visibility_status + common_colon);</script></td>
                                 <td>
                                     <select id="broadcast5" name="broadcast" class="select-status"></select>
                                 </td>
@@ -164,16 +305,13 @@
                         </table>
 
                     </form>
-                    <div class="btn-area">
-                        <input id="apply5" type="button" class="common-btn"/>
-                    </div>
                 </div>
             </div>
-        </div>
-    </div>
-    <div id="footer" class="footer">
-        <div id="copyright" class="copyright">
-            <span><script type="text/javascript">getText(common_copyright);</script>&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;<a href="/html/Open_Source_Software_Notice.txt"><script type="text/javascript">getText(common_opensource);</script></a></span>
+            <div id="footer" class="footer">
+                <div id="copyright" class="copyright">
+                    <span><a href="/html/Open_Source_Software_Notice.txt">COPYRIGHT © 2023 | Open Source Notice</a></span>
+                </div>
+            </div>
         </div>
     </div>
 </div>

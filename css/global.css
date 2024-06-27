@@ -65,8 +65,10 @@ button {
 input[type="checkbox"] {
     width: 20px;
     height: 20px;
+    max-width: 20px;
+    max-height: 20px;
     border: 1px solid #CECECE;
-    border-radius: 4px;
+    border-radius: 4px !important;
     appearance: none;
     background-color: transparent;
     outline: none;
@@ -77,12 +79,44 @@ input[type="checkbox"]:checked {
     background-size: 10px;
     background-repeat: no-repeat;
     background-position: center center;
-    padding: 2px;
+    /* padding: 2px; */
     background-color: #F69322;
 }
 input[type="checkbox"]:not(:disabled):checked {
     border-color: #F69322;
     background-image: url('../images/new/checkbox-checked.svg');
+}
+input[type="checkbox"].password-visibility {
+    width: 24px;
+    height: 24px;
+    border: none;
+    appearance: none;
+    background-color: transparent;
+    outline: none;
+    transition: outline 0.1s;
+    cursor: pointer;
+    background-image: url('../images/new/icon-eye-default.svg');
+    background-size: 18px;
+    background-repeat: no-repeat;
+    background-position: center center;
+    position: absolute;
+    right: 12px;
+    top: 34px;
+}
+input[type="checkbox"].password-visibility:checked {
+    background-color: transparent;
+    padding: 0px;
+    background-size: 18px;
+    background-repeat: no-repeat;
+    background-position: center center;
+}
+input[type="checkbox"].password-visibility:not(:disabled):checked {
+    background-image: url('../images/new/icon-eye-active.svg');
+    background-color: transparent;
+    padding: 0px;
+    background-size: 18px;
+    background-repeat: no-repeat;
+    background-position: center center;
 }
 
 /* Sidebar */
@@ -199,7 +233,6 @@ input[type="checkbox"]:not(:disabled):checked {
 }
 .main-content td.settings-title {
     width: 270px;
-    height: 100%;
     vertical-align: middle;
 }
 .main-content td select{
@@ -358,4 +391,14 @@ input[type="checkbox"]:not(:disabled):checked {
 }
 .inputip:first-child {
     margin-left: 0;
+}
+#yanjing .password-visibility {
+    top: 12px !important;  
+}
+.checkbox-name-wrapper {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    align-items: center;
+    gap: 8px;
 }
