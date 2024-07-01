@@ -2,10 +2,11 @@
 <html>
 <head lang="en">
     <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=Edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="shortcut icon" href="../images/favicon.ico">
-    <link rel="stylesheet" href="../css/common.css"/>
-    <link rel="stylesheet" href="../css/diagnosis.css"/>
+    <link rel="stylesheet" href="../css/global.css"/>
+    <link rel="stylesheet" href="../css/header.css"/>
+    <link rel="stylesheet" href="../css/settingsglobal.css"/>
     <script type="text/javascript" src="../lib/jquery-3.5.1.min.js"></script>
     <script type="text/javascript" src="../lib/json_parse.js"></script>
     <script type="text/javascript" src="../lib/json2.js"></script>
@@ -13,6 +14,8 @@
     <script type="text/javascript" src="../js/tools.js"></script>	
     <script type="text/javascript" src="../js/common.js"></script>
     <script type="text/javascript" src="../js/diagnosis.js"></script>
+    <script type="text/javascript" src="../js/header.js" defer></script>
+    <script type="text/javascript" src="../js/sidebar.js" defer></script>
     <title></title>
 </head>
 <body>
@@ -21,30 +24,167 @@
     <div class="content clearfix">
         <div class="content-left">
             <div id="menu-left" class="menu-left">
-                <div id="settings"></div>
+                <div id="settings">
+                    <div class="sidemenu-item">
+                        <div class="sidemenu-title-wrapper">
+                            <span class="sidemenu-title">Mobile Network</span>
+                            <img src="../images/new/icon-dropdown.svg" alt="">
+                        </div>
+                        <ul class="submenu-list">
+                            <li class="submenu-item">
+                                <a class="submenu-link" href="#">Mobile Connection</a>
+                            </li>
+                            <li class="submenu-item">
+                                <a class="submenu-link" href="profilemanagement.html">Profile Management</a>
+                            </li>
+                            <li class="submenu-item">
+                                <a class="submenu-link" href="networksetting.html">Network Settings</a>
+                            </li>
+                            <li class="submenu-item">
+                                <a class="submenu-link" href="#">USSD Service</a>
+                            </li>
+                            <li class="submenu-item">
+                                <a class="submenu-link" href="rfparameters.html">RF Parameters</a>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="sidemenu-item">
+                        <div class="sidemenu-title-wrapper">
+                            <span class="sidemenu-title">Internet</span>
+                            <img src="../images/new/icon-dropdown.svg" alt="">
+                        </div>
+                        <ul class="submenu-list">
+                            <li class="submenu-item">
+                                <a class="submenu-link" href="dhcp.html">DHCP</a>
+                            </li>
+                    </div>
+                    <div class="sidemenu-item">
+                        <div class="sidemenu-title-wrapper">
+                            <span class="sidemenu-title">WiFi</span>
+                            <img src="../images/new/icon-dropdown.svg" alt="">
+                        </div>
+                        <ul class="submenu-list submenu-active">
+                            <li class="submenu-item submenu-link-current">
+                                <a class="submenu-link" href="wlansettings.html">WiFi Basic Settings</a>
+                            </li>
+                            <li class="submenu-item">
+                                <a class="submenu-link" href="wifiadvanced.html">WiFi Advanced Settings</a>
+                            </li>
+                            <li class="submenu-item">
+                                <a class="submenu-link" href="wps.html">WPS</a>
+                            </li>
+                            <li class="submenu-item">
+                                <a class="submenu-link" href="wlanmacfilter.html">WiFi Mac Filter</a>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="sidemenu-item">
+                        <div class="sidemenu-title-wrapper">
+                            <span class="sidemenu-title">Voice</span>
+                            <img src="../images/new/icon-dropdown.svg" alt="">
+                        </div>
+                        <ul class="submenu-list">
+                            <li class="submenu-item">
+                                <a class="submenu-link" href="phonesettings.html">Phone Settings</a>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="sidemenu-item">
+                        <div class="sidemenu-title-wrapper">
+                            <span class="sidemenu-title">VoIP</span>
+                            <img src="../images/new/icon-dropdown.svg" alt="">
+                        </div>
+                        <ul class="submenu-list">
+                            <li class="submenu-item">
+                                <a class="submenu-link" href="sipaccount.html">SIP Server</a>
+                            </li>
+                            <li class="submenu-item">
+                                <a class="submenu-link" href="sipserver.html">SIP Account</a>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="sidemenu-item">
+                        <div class="sidemenu-title-wrapper">
+                            <span class="sidemenu-title">Security</span>
+                            <img src="../images/new/icon-dropdown.svg" alt="">
+                        </div>
+                        <ul class="submenu-list">
+                            <li class="submenu-item">
+                                <a class="submenu-link" href="macfilter.html">MAC Filter</a>
+                            </li>
+                            <li class="submenu-item">
+                                <a class="submenu-link" href="ipfilter.html">IP Filter</a>
+                            </li>
+                            <li class="submenu-item">
+                                <a class="submenu-link" href="portforwarding.html">Port Forwarding</a>
+                            </li>
+                            <li class="submenu-item">
+                                <a class="submenu-link" href="dmzsettings.html">DMZ Settings</a>
+                            </li>
+                            <li class="submenu-item">
+                                <a class="submenu-link" href="pinmanagement.html">PIN Management</a>
+                            </li>
+                            <li class="submenu-item">
+                                <a class="submenu-link" href="diagnosis.html">Diagnosis</a>
+                            </li>
+                            <li class="submenu-item">
+                                <a class="submenu-link" href="upnp.html">UPnP</a>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="sidemenu-item no-border">
+                        <div class="sidemenu-title-wrapper">
+                            <span class="sidemenu-title">Management</span>
+                            <img src="../images/new/icon-dropdown.svg" alt="">
+                        </div>
+                        <ul class="submenu-list">
+                            <li class="submenu-item">
+                                <a class="submenu-link" href="sntp.html">NTP</a>
+                            </li>
+                            <li class="submenu-item">
+                                <a class="submenu-link" href="deviceinfo.html">Device Information</a>
+                            </li>
+                            <li class="submenu-item">
+                                <a class="submenu-link" href="statistics.html">Statistics</a>
+                            </li>
+                            <li class="submenu-item">
+                                <a class="submenu-link" href="systemlog.html">System Log</a>
+                            </li>
+                            <li class="submenu-item">
+                                <a class="submenu-link" href="systemadmin.html">System Admin</a>
+                            </li>
+                            <li class="submenu-item">
+                                <a class="submenu-link" href="upgrade.html">Upgrade</a>
+                            </li>
+                            <li class="submenu-item">
+                                <a class="submenu-link" href="rebootreset.html">Reboot & Reset</a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
             </div>
         </div>
         <div class="content-right">
             <div class="content-box">
                 <div id="main-title" class="main-title">
-                    <h1><script type="text/javascript">getText(str_diagnosis);</script></h1>
+                    <h1>Diagnosis</h1>
                 </div>
-                <div class="main-content">
+                <div class="main-content height-full">
                     <form>
                         <table cellpadding="0" cellspacing="0" width="500" class="">
                             <tbody>
                             <tr>
-                                <td width="210"><script type="text/javascript">getText(str_diagnosis + common_colon);</script></td>
+                                <td width="270">Diagnosis</td>
                                 <td>
                                     <select id="diagnose" name ="enable" class="select-status">
-                                        <option value="1"><script type="text/javascript">getText(str_diagnose_ping);</script></option>
-                                        <option value="2"><script type="text/javascript">getText(str_diagnose_traceroute);</script></option>
-                                        <option value="3"><script type="text/javascript">getText(str_diagnose_nslookup);</script></option>
+                                        <option value="1">Ping</option>
+                                        <option value="2">Option 2</option>
+                                        <option value="3">Option 3</option>
                                     </select>
                                 </td>
                             </tr>
                             <tr id="countTr">
-                                <td width="210"><script type="text/javascript">getText(str_diagnose_count + common_colon);</script></td>
+                                <td width="270">Count</td>
                                 <td>
                                     <input id="count" class="inputip" value="5" type="text"/>
                                 </td>
@@ -54,31 +194,31 @@
                                 <td id="countError" class="error-tips"></td>
                             </tr>
                             <tr>
-                                <td width="210"><script type="text/javascript">getText(str_diagnose_destination + common_colon);</script></td>
+                                <td width="270">Destination</td>
                                 <td>
                                     <input id="target" class="inputip" type="text"/>
                                 </td>
                             </tr>
-                            <tr>
-                                <td width="210"></td>
+                            <tr class="hide">
+                                <td width="270"></td>
                                 <td id="errorMsg" class="error-tips"></td>
                             </tr>
                             </tbody>
                         </table>
                     </form>
-                    <div>
-                        <textarea id="result" disabled class="resultDiv"></textarea>
+                    <div style="width: 100%;">
+                        <textarea id="result" disabled class="resultDiv form-textarea"></textarea>
                     </div>
                     <div class="btn-area">
-                        <input id="apply" type="button" class="common-btn"/>
+                        <button id="apply" type="button" class="common-btn orange">Diagnose</button>
                     </div>
                 </div>
             </div>
-        </div>
-    </div>
-    <div id="footer" class="footer">
-        <div id="copyright" class="copyright">
-            <span><script type="text/javascript">getText(common_copyright);</script>&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;<a href="/html/Open_Source_Software_Notice.txt"><script type="text/javascript">getText(common_opensource);</script></a></span>
+            <div id="footer" class="footer">
+                <div id="copyright" class="copyright">
+                    <span><a href="/html/Open_Source_Software_Notice.txt">COPYRIGHT © 2023 | Open Source Notice</a></span>
+                </div>
+            </div>
         </div>
     </div>
 </div>

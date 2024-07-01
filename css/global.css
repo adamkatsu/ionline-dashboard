@@ -365,7 +365,7 @@ table.table-data {
     align-items: flex-start;
     gap: 16px;
 }
-.short-message {
+.form-textarea {
     width: 100%;
     height: 348px;
     border-radius: 8px;
