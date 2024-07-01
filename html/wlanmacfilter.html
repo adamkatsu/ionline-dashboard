@@ -2,11 +2,11 @@
 <html>
 <head lang="en">
     <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=Edge">
-	<meta name="format-detection" content="telephone=no">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="shortcut icon" href="../images/favicon.ico">
-    <link rel="stylesheet" href="../css/common.css"/>
-    <link rel="stylesheet" href="../css/wlanmacfilter.css"/>
+    <link rel="stylesheet" href="../css/global.css"/>
+    <link rel="stylesheet" href="../css/header.css"/>
+    <link rel="stylesheet" href="../css/settingsglobal.css"/>
     <script type="text/javascript" src="../lib/jquery-3.5.1.min.js"></script>
     <script type="text/javascript" src="../lib/json_parse.js"></script>
     <script type="text/javascript" src="../lib/json2.js"></script>
@@ -14,6 +14,8 @@
     <script type="text/javascript" src="../js/tools.js"></script>	
     <script type="text/javascript" src="../js/common.js"></script>
     <script type="text/javascript" src="../js/wlanmacfilter.js"></script>
+    <script type="text/javascript" src="../js/header.js" defer></script>
+    <script type="text/javascript" src="../js/sidebar.js" defer></script>
     <title></title>
 </head>
 <body>
@@ -22,43 +24,203 @@
     <div class="content clearfix">
         <div class="content-left">
             <div id="menu-left" class="menu-left">
-                <div id="settings"></div>
+                <div id="settings">
+                    <div class="sidemenu-item">
+                        <div class="sidemenu-title-wrapper">
+                            <span class="sidemenu-title">Mobile Network</span>
+                            <img src="../images/new/icon-dropdown.svg" alt="">
+                        </div>
+                        <ul class="submenu-list">
+                            <li class="submenu-item">
+                                <a class="submenu-link" href="#">Mobile Connection</a>
+                            </li>
+                            <li class="submenu-item">
+                                <a class="submenu-link" href="profilemanagement.html">Profile Management</a>
+                            </li>
+                            <li class="submenu-item">
+                                <a class="submenu-link" href="networksetting.html">Network Settings</a>
+                            </li>
+                            <li class="submenu-item">
+                                <a class="submenu-link" href="#">USSD Service</a>
+                            </li>
+                            <li class="submenu-item">
+                                <a class="submenu-link" href="rfparameters.html">RF Parameters</a>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="sidemenu-item">
+                        <div class="sidemenu-title-wrapper">
+                            <span class="sidemenu-title">Internet</span>
+                            <img src="../images/new/icon-dropdown.svg" alt="">
+                        </div>
+                        <ul class="submenu-list">
+                            <li class="submenu-item">
+                                <a class="submenu-link" href="dhcp.html">DHCP</a>
+                            </li>
+                    </div>
+                    <div class="sidemenu-item">
+                        <div class="sidemenu-title-wrapper">
+                            <span class="sidemenu-title">WiFi</span>
+                            <img src="../images/new/icon-dropdown.svg" alt="">
+                        </div>
+                        <ul class="submenu-list submenu-active">
+                            <li class="submenu-item submenu-link-current">
+                                <a class="submenu-link" href="wlansettings.html">WiFi Basic Settings</a>
+                            </li>
+                            <li class="submenu-item">
+                                <a class="submenu-link" href="wifiadvanced.html">WiFi Advanced Settings</a>
+                            </li>
+                            <li class="submenu-item">
+                                <a class="submenu-link" href="wps.html">WPS</a>
+                            </li>
+                            <li class="submenu-item">
+                                <a class="submenu-link" href="wlanmacfilter.html">WiFi Mac Filter</a>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="sidemenu-item">
+                        <div class="sidemenu-title-wrapper">
+                            <span class="sidemenu-title">Voice</span>
+                            <img src="../images/new/icon-dropdown.svg" alt="">
+                        </div>
+                        <ul class="submenu-list">
+                            <li class="submenu-item">
+                                <a class="submenu-link" href="phonesettings.html">Phone Settings</a>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="sidemenu-item">
+                        <div class="sidemenu-title-wrapper">
+                            <span class="sidemenu-title">VoIP</span>
+                            <img src="../images/new/icon-dropdown.svg" alt="">
+                        </div>
+                        <ul class="submenu-list">
+                            <li class="submenu-item">
+                                <a class="submenu-link" href="sipaccount.html">SIP Server</a>
+                            </li>
+                            <li class="submenu-item">
+                                <a class="submenu-link" href="sipserver.html">SIP Account</a>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="sidemenu-item">
+                        <div class="sidemenu-title-wrapper">
+                            <span class="sidemenu-title">Security</span>
+                            <img src="../images/new/icon-dropdown.svg" alt="">
+                        </div>
+                        <ul class="submenu-list">
+                            <li class="submenu-item">
+                                <a class="submenu-link" href="macfilter.html">MAC Filter</a>
+                            </li>
+                            <li class="submenu-item">
+                                <a class="submenu-link" href="ipfilter.html">IP Filter</a>
+                            </li>
+                            <li class="submenu-item">
+                                <a class="submenu-link" href="portforwarding.html">Port Forwarding</a>
+                            </li>
+                            <li class="submenu-item">
+                                <a class="submenu-link" href="dmzsettings.html">DMZ Settings</a>
+                            </li>
+                            <li class="submenu-item">
+                                <a class="submenu-link" href="pinmanagement.html">PIN Management</a>
+                            </li>
+                            <li class="submenu-item">
+                                <a class="submenu-link" href="diagnosis.html">Diagnosis</a>
+                            </li>
+                            <li class="submenu-item">
+                                <a class="submenu-link" href="upnp.html">UPnP</a>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="sidemenu-item no-border">
+                        <div class="sidemenu-title-wrapper">
+                            <span class="sidemenu-title">Management</span>
+                            <img src="../images/new/icon-dropdown.svg" alt="">
+                        </div>
+                        <ul class="submenu-list">
+                            <li class="submenu-item">
+                                <a class="submenu-link" href="sntp.html">NTP</a>
+                            </li>
+                            <li class="submenu-item">
+                                <a class="submenu-link" href="deviceinfo.html">Device Information</a>
+                            </li>
+                            <li class="submenu-item">
+                                <a class="submenu-link" href="statistics.html">Statistics</a>
+                            </li>
+                            <li class="submenu-item">
+                                <a class="submenu-link" href="systemlog.html">System Log</a>
+                            </li>
+                            <li class="submenu-item">
+                                <a class="submenu-link" href="systemadmin.html">System Admin</a>
+                            </li>
+                            <li class="submenu-item">
+                                <a class="submenu-link" href="upgrade.html">Upgrade</a>
+                            </li>
+                            <li class="submenu-item">
+                                <a class="submenu-link" href="rebootreset.html">Reboot & Reset</a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
             </div>
         </div>
         <div class="content-right">
             <div class="content-box">
                 <div id="main-title" class="main-title">
-                    <h1><script type="text/javascript">getText(str_wlanmacfilter);</script></h1>
+                    <h1>WiFi MAC Filter</h1>
                 </div>
-                <div class="main-content">
-                    <form id="macfiltersettings">
-                        <table cellpadding="0" cellspacing="0" width="572" class="common-table table-top">
-                            <tbody>
-                            <tr>
-                                <td width="120"><script type="text/javascript">getText(common_status + common_colon);</script></td>
-                                <td>
-                                    <select id="macfiltermode" class="select-status"></select>
-                                </td>
-                            </tr>
-                            </tbody>
-                        </table>
-                    </form>
-                    <div class="modetips">
-                        <p class="tips"><script>getText(str_security_wlanmacfilter_disable);</script></p>
-                        <p class="tips"><script>getText(str_security_wlanmacfilter_whitelist);</script></p>
-                        <p class="tips"><script>getText(str_security_wlanmacfilter_blacklist);</script></p>
+                <div class="main-content height-full">
+                    <div class="form-wrapper wifi-mac-filter">
+                        <form id="macfiltersettings">
+                            <table cellpadding="0" cellspacing="0" width="572" class="common-table table-top">
+                                <tbody>
+                                <tr>
+                                    <td width="270">Status</td>
+                                    <td>
+                                        <select id="macfiltermode" class="select-status">
+                                            <option value="0">Disable</option>
+                                            <option value="1">Enable</option>
+                                        </select>
+                                    </td>
+                                </tr>
+                                </tbody>
+                            </table>
+                        </form>
+                        <div id="macfilterlist">
+                            <form id="macfilterform">
+                                <table id="listtable"  cellpadding="0" cellspacing="1" class="table-data">
+                                    <tbody id="listbody">
+                                        <tr>
+                                            <th width="270" class="main-title">MAC Address</th>
+                                            <th >Option</th>
+                                        </tr>
+                                        <tr height="160">
+                                            <td class="macaddr"></td>
+                                            <td class="macoptions"></td>
+                                        </tr>
+                                    </tbody>
+                                </table>
+                                <button id="add" type="button" value="" class="ipfilterlistadd-btn common-btn orange"> <svg width="17" height="16" viewBox="0 0 17 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <path d="M3.83337 8.00016H13.1667M8.50004 3.3335V12.6668" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                                    </svg> Add</button>
+                                </form>
+                        </div>
+                        <ul class="modetips">
+                            <li class="tips">Disable will disable the WiFi MAC filter.</li>
+                            <li class="tips">Whitelist will only allow devices with the selected WiFi MAC address connect.</li>
+                            <li class="tips">Blacklist will only deny devices with the selected WiFi MAC address from connecting.</li>
+                        </ul>
                     </div>
-                    <div id="macfilterlist"></div>
                     <div class="btn-area firewall_btn-area">
-                        <input id="apply" type="button" class="common-btn"/>
+                        <button id="apply" type="button" class="common-btn orange">Apply</button>
                     </div>
                 </div>
             </div>
-        </div>
-    </div>
-    <div id="footer" class="footer">
-        <div id="copyright" class="copyright">
-            <span><script type="text/javascript">getText(common_copyright);</script>&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;<a href="/html/Open_Source_Software_Notice.txt"><script type="text/javascript">getText(common_opensource);</script></a></span>
+            <div id="footer" class="footer">
+                <div id="copyright" class="copyright">
+                    <span><a href="/html/Open_Source_Software_Notice.txt">COPYRIGHT © 2023 | Open Source Notice</a></span>
+                </div>
+            </div>
         </div>
     </div>
 </div>

@@ -292,6 +292,11 @@ input[type="checkbox"].password-visibility:not(:disabled):checked {
     border: 1px solid #F69322;
     border-radius: 8px;
     min-width: 100px;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    gap: 4px;
 }
 .common-btn.white {
     background-color: #ffffff;
@@ -314,7 +319,7 @@ input[type="checkbox"].password-visibility:not(:disabled):checked {
     border: 1px solid #E4E4E4;
     border-radius: 8px;
 }
-.table-data table {
+table.table-data {
     width: 100%;
     border-radius: 8px;
     overflow: hidden;
@@ -323,8 +328,8 @@ input[type="checkbox"].password-visibility:not(:disabled):checked {
     text-align: left;
     overflow: hidden;
 }
-.content-box.table-data td,
-.content-box.table-data th {
+.content-box .table-data td,
+.content-box .table-data th {
     border: 1px solid #E4E4E4;
     padding: 16px;
     overflow: hidden;
@@ -339,14 +344,14 @@ input[type="checkbox"].password-visibility:not(:disabled):checked {
 .content-box tr:last-child td {
     border-bottom: none;
 }
-.content-box.table-data th {
+.content-box th {
     background-color: #F9F9F9;
     border-top: none;
 }
-.content-box.table-data th:first-child {
+.content-box th:first-child {
     border-left: none;
 }
-.content-box.table-data th:last-child {
+.content-box th:last-child {
     border-right: none;
 }
 
@@ -410,4 +415,46 @@ input[type="checkbox"].password-visibility:not(:disabled):checked {
     justify-content: flex-start;
     align-items: center;
     gap: 8px;
+}
+
+/* WiFi MAC Filter */
+.form-wrapper.wifi-mac-filter {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: stretch;
+    gap: 16px;
+}
+.form-wrapper.wifi-mac-filter ul {
+    padding-left: 28px;
+}
+.modetips {
+    padding: 10px;
+    background-color: #FFF1F1;
+    border-radius: 8px;
+}
+.tips {
+    font-size: 12px;
+}
+#listtable {
+    width: 100%;
+    margin-bottom: 24px;
+}
+#listbody,
+#listbody td,
+#listbody th {
+    text-align: left;
+    padding: 16px;
+    border: 1px solid #E4E4E4;
+}
+
+/* SIP Account */
+
+#sipaccountlistform {
+    margin-top: 24px;
+}
+.sipdes {
+    color: #A6A6A7;
+    padding-left: 16px;
 }
