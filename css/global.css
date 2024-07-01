@@ -459,3 +459,15 @@ table.table-data {
     color: #A6A6A7;
     padding-left: 16px;
 }
+
+/* PIN Management */
+
+.input-disabled {
+    display: inline-block;
+    background-color: #f9f9f9;
+    border: 1px solid #E4E4E4;
+    border-radius: 8px;
+    width: 100%;
+    height: 100%;
+    padding: 12px;
+}
