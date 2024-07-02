@@ -511,4 +511,12 @@ table.table-data {
     padding-top: 4px !important;
     padding-bottom: 4px !important;
 }
-  
+
+/* NTP */
+.enable-title {
+    margin-bottom: 16px;
+    display: flex;
+    flex-direction: row;
+    gap: 8px;
+    align-items: center;
+}
