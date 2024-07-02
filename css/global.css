@@ -520,3 +520,28 @@ table.table-data {
     gap: 8px;
     align-items: center;
 }
+
+/* Device Info */
+
+.under {
+    width: 370px;
+    position: relative;
+    overflow: hidden;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.usage {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 0%;
+    height: 100%;
+    background-color: #F69322;
+    border-radius: 8px;
+}
+.strContent {
+    position: relative;
+    z-index: 3;
+    text-align: center;
+}
