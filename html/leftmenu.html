@@ -1,132 +1,142 @@
-<div id="menu-left-settings">
-    <ul>
-        <li id="moblienetwork" class="menu-left-item pointer submenu">
-            <span id="label-mobilenetwork"></span>
-            <ul class="hide">
-                <li id="mobileconnection" class="submenu-item">
-                    <a href="../html/mobileconnection.html"><span></span></a>
-                </li>
-                <li id="profilemanagement" class="submenu-item">
-                    <a href="../html/profilemanagement.html"><span></span></a>
-                </li>
-                <li id="networksetting" class="submenu-item">
-                    <a href="../html/networksetting.html"><span></span></a>
-                </li>
-                <li id="balancechecker" class="submenu-item">
-                    <a href="../html/balancechecker.html"><span></span></a>
-                </li>
-                <li id="rfparamters" class="submenu-item">
-                    <a href="../html/rfparamters.html"><span></span></a>
-                </li>
-            </ul>
-        </li>
-        <li id="internet" class="menu-left-item pointer submenu">
-            <span id="label-internet"></span>
-            <ul class="hide">
-                <!--<li id="vpn" class="submenu-item">
-                    <a href="../html/vpn.html"><span style="margin-left: 0"></span></a>
-                </li>-->
-                <!--<li id="ethernet" class="submenu-item">
-                    <a href="../html/ethernet.html"><span></span></a>
-                </li>-->
-                <li id="dhcp" class="submenu-item">
-                    <a href="../html/dhcp.html"><span></span></a>
-                </li>
-            </ul>
-        </li>
-        <li id="wireless" class="menu-left-item pointer submenu">
-            <span id="label-wireless"></span>
-            <ul class="hide">
-                <li id="wlansettings" class="submenu-item">
-                    <a href="../html/wlansettings.html"><span></span></a>
-                </li>
-                <li id="wifiadvanced" class="submenu-item">
-                    <a href="../html/wifiadvanced.html"><span></span></a>
-                </li>
-                <li id="wps" class="submenu-item">
-                    <a href="../html/wps.html"><span></span></a>
-                </li>
-                <li id="wlanmacfilter" class="submenu-item">
-                    <a href="../html/wlanmacfilter.html"><span></span></a>
-                </li>
-            </ul>
-        </li>
-        <li id="voice" class="menu-left-item pointer submenu">
-            <span id="label-voice"></span>
-            <ul class="hide">
-                <li id="phonesettings" class="submenu-item">
-                    <a href="../html/phonesettings.html"><span></span></a>
-                </li>
-            </ul>
-        </li>
-        <li id="voip" class="menu-left-item pointer submenu">
-            <span id="label-voip"></span>
-            <ul class="hide">
-				<li id="sipserver" class="submenu-item">
-                    <a href="../html/sipserver.html"><span></span></a>
-                </li>
-                <li id="sipaccount" class="submenu-item">
-                    <a href="../html/sipaccount.html"><span></span></a>
-                </li>
-               <!-- <li id="sipaccount" class="submenu-item">
-                    <a href="../html/sipaccount.html"><span></span></a>
-                </li>-->
-            </ul>
-        </li>
-        <li id="features" class="menu-left-item pointer submenu">
-            <span id="label-features"></span>
-            <ul class="hide">
-                <li id="firewall" class="submenu-item">
-                    <a href="../html/firewall.html"><span></span></a>
-                </li>
-                <li id="macfilter" class="submenu-item">
-                    <a href="../html/macfilter.html"><span></span></a>
-                </li>
-                <li id="ipfilter" class="submenu-item">
-                    <a href="../html/ipfilter.html"><span></span></a>
-                </li>
-                <li id="portforwarding" class="submenu-item">
-                    <a href="../html/portforwarding.html"><span></span></a>
-                </li>
-                <li id="dmzsettings" class="submenu-item">
-                    <a href="../html/dmzsettings.html"><span></span></a>
-                </li>
-                <li id="pinmanagement" class="submenu-item">
-                    <a href="../html/pinmanagement.html"><span></span></a>
-                </li>
-                <li id="diagnosis" class="submenu-item">
-                    <a href="../html/diagnosis.html"><span></span></a>
-                </li>
-				<li id="upnp" class="submenu-item">
-				    <a href="upnp.html"><span></span></a>
-				</li>
-            </ul>
-        </li>
-        <li id="management" class="menu-left-item pointer submenu">
-            <span id="label-management"></span>
-            <ul class="hide">
-                <li id="sntp" class="submenu-item">
-                    <a href="../html/sntp.html"><span></span></a>
-                </li>
-                <li id="deviceinfo" class="submenu-item">
-                    <a href="../html/deviceinfo.html"><span></span></a>
-                </li>
-                <li id="statistics" class="submenu-item">
-                    <a href="../html/statistics.html"><span></span></a>
-                </li>
-                <li id="systemlog" class="submenu-item">
-                    <a href="../html/systemlog.html"><span></span></a>
-                </li>
-                <li id="systemadmin" class="submenu-item">
-                    <a href="../html/systemadmin.html"><span></span></a>
-                </li>
-                <li id="upgrade" class="submenu-item">
-                    <a href="../html/upgrade.html"><span></span></a>
-                </li>
-                <li id="rebootreset" class="submenu-item">
-                    <a href="../html/rebootreset.html"><span></span></a>
-                </li>
-            </ul>
-        </li>
-    </ul>
+<div class="content-left">
+    <div id="menu-left" class="menu-left">
+        <div id="settings">
+            <div class="sidemenu-item">
+                <div class="sidemenu-title-wrapper">
+                    <span class="sidemenu-title">Mobile Network</span>
+                    <img src="../images/new/icon-dropdown.svg" alt="">
+                </div>
+                <ul class="submenu-list">
+                    <li class="submenu-item">
+                        <a class="submenu-link" href="mobileconnection.html">Mobile Connection</a>
+                    </li>
+                    <li class="submenu-item">
+                        <a class="submenu-link" href="profilemanagement.html">Profile Management</a>
+                    </li>
+                    <li class="submenu-item">
+                        <a class="submenu-link" href="networksetting.html">Network Settings</a>
+                    </li>
+                    <li class="submenu-item">
+                        <a class="submenu-link" href="balancechecker.html">USSD Service</a>
+                    </li>
+                    <li class="submenu-item">
+                        <a class="submenu-link" href="rfparamters.html">RF Parameters</a>
+                    </li>
+                </ul>
+            </div>
+            <div class="sidemenu-item">
+                <div class="sidemenu-title-wrapper">
+                    <span class="sidemenu-title">Internet</span>
+                    <img src="../images/new/icon-dropdown.svg" alt="">
+                </div>
+                <ul class="submenu-list">
+                    <li class="submenu-item">
+                        <a class="submenu-link" href="dhcp.html">DHCP</a>
+                    </li>
+            </div>
+            <div class="sidemenu-item">
+                <div class="sidemenu-title-wrapper">
+                    <span class="sidemenu-title">WiFi</span>
+                    <img src="../images/new/icon-dropdown.svg" alt="">
+                </div>
+                <ul class="submenu-list">
+                    <li class="submenu-item">
+                        <a class="submenu-link" href="wlansettings.html">WiFi Basic Settings</a>
+                    </li>
+                    <li class="submenu-item">
+                        <a class="submenu-link" href="wifiadvanced.html">WiFi Advanced Settings</a>
+                    </li>
+                    <li class="submenu-item">
+                        <a class="submenu-link" href="wps.html">WPS</a>
+                    </li>
+                    <li class="submenu-item">
+                        <a class="submenu-link" href="wlanmacfilter.html">WiFi Mac Filter</a>
+                    </li>
+                </ul>
+            </div>
+            <div class="sidemenu-item">
+                <div class="sidemenu-title-wrapper">
+                    <span class="sidemenu-title">Voice</span>
+                    <img src="../images/new/icon-dropdown.svg" alt="">
+                </div>
+                <ul class="submenu-list">
+                    <li class="submenu-item">
+                        <a class="submenu-link" href="phonesettings.html">Phone Settings</a>
+                    </li>
+                </ul>
+            </div>
+            <div class="sidemenu-item">
+                <div class="sidemenu-title-wrapper">
+                    <span class="sidemenu-title">VoIP</span>
+                    <img src="../images/new/icon-dropdown.svg" alt="">
+                </div>
+                <ul class="submenu-list">
+                    <li class="submenu-item">
+                        <a class="submenu-link" href="sipserver.html">SIP Server</a>
+                    </li>
+                    <li class="submenu-item">
+                        <a class="submenu-link" href="sipaccount.html">SIP Account</a>
+                    </li>
+                </ul>
+            </div>
+            <div class="sidemenu-item">
+                <div class="sidemenu-title-wrapper">
+                    <span class="sidemenu-title">Security</span>
+                    <img src="../images/new/icon-dropdown.svg" alt="">
+                </div>
+                <ul class="submenu-list">
+                    <li class="submenu-item">
+                        <a class="submenu-link" href="macfilter.html">MAC Filter</a>
+                    </li>
+                    <li class="submenu-item">
+                        <a class="submenu-link" href="ipfilter.html">IP Filter</a>
+                    </li>
+                    <li class="submenu-item">
+                        <a class="submenu-link" href="portforwarding.html">Port Forwarding</a>
+                    </li>
+                    <li class="submenu-item">
+                        <a class="submenu-link" href="dmzsettings.html">DMZ Settings</a>
+                    </li>
+                    <li class="submenu-item">
+                        <a class="submenu-link" href="pinmanagement.html">PIN Management</a>
+                    </li>
+                    <li class="submenu-item">
+                        <a class="submenu-link" href="diagnosis.html">Diagnosis</a>
+                    </li>
+                    <li class="submenu-item">
+                        <a class="submenu-link" href="upnp.html">UPnP</a>
+                    </li>
+                </ul>
+            </div>
+            <div class="sidemenu-item no-border">
+                <div class="sidemenu-title-wrapper">
+                    <span class="sidemenu-title">Management</span>
+                    <img src="../images/new/icon-dropdown.svg" alt="">
+                </div>
+                <ul class="submenu-list">
+                    <li class="submenu-item">
+                        <a class="submenu-link" href="sntp.html">NTP</a>
+                    </li>
+                    <li class="submenu-item">
+                        <a class="submenu-link" href="deviceinfo.html">Device Information</a>
+                    </li>
+                    <li class="submenu-item">
+                        <a class="submenu-link" href="statistics.html">Statistics</a>
+                    </li>
+                    <li class="submenu-item">
+                        <a class="submenu-link" href="systemlog.html">System Log</a>
+                    </li>
+                    <li class="submenu-item">
+                        <a class="submenu-link" href="systemadmin.html">System Admin</a>
+                    </li>
+                    <li class="submenu-item">
+                        <a class="submenu-link" href="upgrade.html">Upgrade</a>
+                    </li>
+                    <li class="submenu-item">
+                        <a class="submenu-link" href="rebootreset.html">Reboot & Reset</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </div>
 </div>
