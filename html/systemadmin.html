@@ -2,10 +2,11 @@
 <html>
 <head lang="en">
     <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=Edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="shortcut icon" href="../images/favicon.ico">
-    <link rel="stylesheet" href="../css/common.css"/>
-    <link rel="stylesheet" href="../css/systemadmin.css"/>
+    <link rel="stylesheet" href="../css/global.css"/>
+    <link rel="stylesheet" href="../css/header.css"/>
+    <link rel="stylesheet" href="../css/settingsglobal.css"/>
     <script type="text/javascript" src="../lib/jquery-3.5.1.min.js"></script>
     <script type="text/javascript" src="../lib/json_parse.js"></script>
     <script type="text/javascript" src="../lib/json2.js"></script>
@@ -15,6 +16,9 @@
     <script type="text/javascript" src="../js/md5.js"></script>
     <script type="text/javascript" src="../js/encryption.js"></script>
     <script type="text/javascript" src="../js/systemadmin.js"></script>
+    <script type="text/javascript" src="../js/global.js" defer></script>
+    <script type="text/javascript" src="../js/header.js" defer></script>
+    <script type="text/javascript" src="../js/sidebar.js" defer></script>
     <title></title>
 </head>
 <body>
@@ -23,24 +27,161 @@
     <div class="content clearfix">
         <div class="content-left">
             <div id="menu-left" class="menu-left">
-                <div id="settings"></div>
+                <div id="settings">
+                    <div class="sidemenu-item">
+                        <div class="sidemenu-title-wrapper">
+                            <span class="sidemenu-title">Mobile Network</span>
+                            <img src="../images/new/icon-dropdown.svg" alt="">
+                        </div>
+                        <ul class="submenu-list">
+                            <li class="submenu-item">
+                                <a class="submenu-link" href="#">Mobile Connection</a>
+                            </li>
+                            <li class="submenu-item">
+                                <a class="submenu-link" href="profilemanagement.html">Profile Management</a>
+                            </li>
+                            <li class="submenu-item">
+                                <a class="submenu-link" href="networksetting.html">Network Settings</a>
+                            </li>
+                            <li class="submenu-item">
+                                <a class="submenu-link" href="#">USSD Service</a>
+                            </li>
+                            <li class="submenu-item">
+                                <a class="submenu-link" href="rfparameters.html">RF Parameters</a>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="sidemenu-item">
+                        <div class="sidemenu-title-wrapper">
+                            <span class="sidemenu-title">Internet</span>
+                            <img src="../images/new/icon-dropdown.svg" alt="">
+                        </div>
+                        <ul class="submenu-list">
+                            <li class="submenu-item">
+                                <a class="submenu-link" href="dhcp.html">DHCP</a>
+                            </li>
+                    </div>
+                    <div class="sidemenu-item">
+                        <div class="sidemenu-title-wrapper">
+                            <span class="sidemenu-title">WiFi</span>
+                            <img src="../images/new/icon-dropdown.svg" alt="">
+                        </div>
+                        <ul class="submenu-list submenu-active">
+                            <li class="submenu-item submenu-link-current">
+                                <a class="submenu-link" href="wlansettings.html">WiFi Basic Settings</a>
+                            </li>
+                            <li class="submenu-item">
+                                <a class="submenu-link" href="wifiadvanced.html">WiFi Advanced Settings</a>
+                            </li>
+                            <li class="submenu-item">
+                                <a class="submenu-link" href="wps.html">WPS</a>
+                            </li>
+                            <li class="submenu-item">
+                                <a class="submenu-link" href="wlanmacfilter.html">WiFi Mac Filter</a>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="sidemenu-item">
+                        <div class="sidemenu-title-wrapper">
+                            <span class="sidemenu-title">Voice</span>
+                            <img src="../images/new/icon-dropdown.svg" alt="">
+                        </div>
+                        <ul class="submenu-list">
+                            <li class="submenu-item">
+                                <a class="submenu-link" href="phonesettings.html">Phone Settings</a>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="sidemenu-item">
+                        <div class="sidemenu-title-wrapper">
+                            <span class="sidemenu-title">VoIP</span>
+                            <img src="../images/new/icon-dropdown.svg" alt="">
+                        </div>
+                        <ul class="submenu-list">
+                            <li class="submenu-item">
+                                <a class="submenu-link" href="sipaccount.html">SIP Server</a>
+                            </li>
+                            <li class="submenu-item">
+                                <a class="submenu-link" href="sipserver.html">SIP Account</a>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="sidemenu-item">
+                        <div class="sidemenu-title-wrapper">
+                            <span class="sidemenu-title">Security</span>
+                            <img src="../images/new/icon-dropdown.svg" alt="">
+                        </div>
+                        <ul class="submenu-list">
+                            <li class="submenu-item">
+                                <a class="submenu-link" href="macfilter.html">MAC Filter</a>
+                            </li>
+                            <li class="submenu-item">
+                                <a class="submenu-link" href="ipfilter.html">IP Filter</a>
+                            </li>
+                            <li class="submenu-item">
+                                <a class="submenu-link" href="portforwarding.html">Port Forwarding</a>
+                            </li>
+                            <li class="submenu-item">
+                                <a class="submenu-link" href="dmzsettings.html">DMZ Settings</a>
+                            </li>
+                            <li class="submenu-item">
+                                <a class="submenu-link" href="pinmanagement.html">PIN Management</a>
+                            </li>
+                            <li class="submenu-item">
+                                <a class="submenu-link" href="diagnosis.html">Diagnosis</a>
+                            </li>
+                            <li class="submenu-item">
+                                <a class="submenu-link" href="upnp.html">UPnP</a>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="sidemenu-item no-border">
+                        <div class="sidemenu-title-wrapper">
+                            <span class="sidemenu-title">Management</span>
+                            <img src="../images/new/icon-dropdown.svg" alt="">
+                        </div>
+                        <ul class="submenu-list">
+                            <li class="submenu-item">
+                                <a class="submenu-link" href="sntp.html">NTP</a>
+                            </li>
+                            <li class="submenu-item">
+                                <a class="submenu-link" href="deviceinfo.html">Device Information</a>
+                            </li>
+                            <li class="submenu-item">
+                                <a class="submenu-link" href="statistics.html">Statistics</a>
+                            </li>
+                            <li class="submenu-item">
+                                <a class="submenu-link" href="systemlog.html">System Log</a>
+                            </li>
+                            <li class="submenu-item">
+                                <a class="submenu-link" href="systemadmin.html">System Admin</a>
+                            </li>
+                            <li class="submenu-item">
+                                <a class="submenu-link" href="upgrade.html">Upgrade</a>
+                            </li>
+                            <li class="submenu-item">
+                                <a class="submenu-link" href="rebootreset.html">Reboot & Reset</a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
             </div>
         </div>
         <div class="content-right">
             <div class="content-box">
                 <div class="main-title">
-                    <h1><script type="text/javascript">getText(str_admin_password);</script></h1>
+                    <h1>Admin Password</h1>
                 </div>
-                <div class="main-content">
-                    <div id="modifypsd">
+                <div class="main-content height-full">
+                    <div id="modifypsd form-wrapper">
                         <table cellpadding="0" cellspacing="0" width="500" class="">
                             <tbody>
                             <tr>
-                                <td width="210"><script type="text/javascript">getText(str_system_curpsd + common_colon);</script></td>
-                                <td class="yanjing">
+                                <td width="270">Current Password</td>
+                                <td width="370" class="yanjing" style="position: relative;">
                                     <input type="password" style="display:none" autocomplete="off" disabled/>
-                                    <img src="../images/yanjing_bi.png" alt="" onclick="curpsdPsw()" class="biyanjing"  id="curpsdYan"/>
-                                    <input id="curpsd" type="password" class="newpsd" maxlength="36" autocomplete="off"/>
+                                    <input id="curpsd" type="password" class="newpsd password-toggle" maxlength="36" autocomplete="off"/>
+                                    <input type="checkbox" class="password-visibility" onclick="showPassword(this)">
                                 </td>
                             </tr>
                             <tr id="curpsdtips">
@@ -48,11 +189,11 @@
                                 <td><span id="curtips" class="error-tips"></span></td>
                             </tr>
                             <tr  class="Psdlanget" >
-                                <td><script type="text/javascript">getText(str_system_newpsd + common_colon);</script></td>
-                                <td class="yanjing">
+                                <td>New Password</td>
+                                <td class="yanjing" style="position: relative;">
                                     <input type="password" style="display:none" autocomplete="off" disabled/>
-                                    <img src="../images/yanjing_bi.png" alt="" onclick="ShowPsw()" class="biyanjing"  id="biyanjing"/>
-                                    <input type="password" class="newpsd" id="newpsd" name="pwd" maxlength="36" autocomplete="off"/>
+                                    <input type="password" class="newpsd" id="newpsd" name="pwd password-visibility" maxlength="36" autocomplete="off"/>
+                                    <input type="checkbox" class="password-visibility" onclick="showPassword(this)">
                                 </td>
                             </tr>
                             <tr class="pwdColor hide" style="height: 20px;">
@@ -68,11 +209,11 @@
                                 <td><span id="newtips" class="error-tips"></span></td>
                             </tr>
                             <tr>
-                                <td><script type="text/javascript">getText(str_system_confirmpsd + common_colon);</script></td>
-                                <td class="yanjing">
+                                <td>Confirm Password</td>
+                                <td class="yanjing" style="position: relative;">
                                     <input type="password" style="display:none" autocomplete="off" disabled/>
-                                    <img src="../images/yanjing_bi.png" alt="" onclick="confirmpsd()" class="biyanjing"  id="confirmpsdYan"/>
-                                    <input id="confirmpsd" class="newpsd" type="password" maxlength="36" autocomplete="off"/>
+                                    <input id="confirmpsd" class="newpsd password-toggle" type="password" maxlength="36" autocomplete="off"/>
+                                    <input type="checkbox" class="password-visibility" onclick="showPassword(this)">
                                 </td>
                             </tr>
                             <tr id="confirmpsdtips">
@@ -83,15 +224,15 @@
                         </table>
                     </div>
                     <div class="btn-area">
-                        <input id="apply-psw" type="button" class="common-btn"/>
+                        <button id="apply-psw" type="button" class="common-btn orange">Apply</button>
                     </div>
                 </div>
             </div>
-        </div>
-    </div>
-    <div id="footer" class="footer">
-        <div id="copyright" class="copyright">
-            <span><script type="text/javascript">getText(common_copyright);</script>&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;<a href="/html/Open_Source_Software_Notice.txt"><script type="text/javascript">getText(common_opensource);</script></a></span>
+            <div id="footer" class="footer">
+                <div id="copyright" class="copyright">
+                    <span><a href="/html/Open_Source_Software_Notice.txt">COPYRIGHT © 2023 | Open Source Notice</a></span>
+                </div>
+            </div>
         </div>
     </div>
 </div>
