@@ -2,7 +2,8 @@
 <html>
 <head lang="en">
     <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=Edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
     <link rel="shortcut icon" href="../images/favicon.ico">
     <link rel="stylesheet" href="../css/global.css"/>
     <link rel="stylesheet" href="../css/header.css"/>
@@ -15,6 +16,7 @@
     <script type="text/javascript" src="../js/common.js"></script>
     <script type="text/javascript" src="../js/encryption.js"></script>
     <script type="text/javascript" src="../js/home.js"></script>
+    <script type="text/javascript" src="../js/hometab.js" defer></script>
     <title></title>
 </head>
 <body>
@@ -23,7 +25,7 @@
     <div class="content w-full">
         <div class="content-container">
             <div class="mid1">
-                <div id="internetimg" class="midBig midBigOnfocus" onclick="initInternet()">
+                <div id="internetimg" class="tab-toggle midBig midBigOnfocus" data-table="internet" onclick="initInternet()">
                     <div class="home-menu-icon">
                         <svg width="48" height="48" viewBox="0 0 48 48" fill="none" xmlns="http://www.w3.org/2000/svg">
                             <path d="M24 42C33.9411 42 42 33.9411 42 24C42 14.0589 33.9411 6 24 6C14.0589 6 6 14.0589 6 24C6 33.9411 14.0589 42 24 42Z" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
@@ -34,7 +36,7 @@
                     </div>
                     <p>Internet Info</p>
                 </div>
-                <div id="wifiimghome" class="midBig" onclick="initWifi()" >
+                <div id="wifiimghome" class="tab-toggle midBig" data-table="wifi" onclick="initWifi()" >
                     <div class="home-menu-icon">
                         <svg width="48" height="48" viewBox="0 0 48 48" fill="none" xmlns="http://www.w3.org/2000/svg">
                             <path d="M24 18V42" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
@@ -47,7 +49,7 @@
                     </div>
                     <p>Wifi Status</p>
                 </div>
-                <div id="clientimg" class="midBig" onclick="initClients()" >
+                <div id="clientimg" class="tab-toggle midBig" data-table="client" onclick="initClients()" >
                     <div class="home-menu-icon">
                         <svg width="48" height="48" viewBox="0 0 48 48" fill="none" xmlns="http://www.w3.org/2000/svg">
                             <path d="M26 34H22" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
@@ -57,136 +59,155 @@
                     <p>Clients</p>
                 </div>
             </div>
-            <div id="internet" class="">
+            <div id="internet" class="tab-content ">
                 <div class="mid3">
-                    <table class="midDown_internet">
-                        <tr>
-                            <td>Internet Mode</td>
-                            <td id="internetMode">Mobile Data</td>
-                        </tr>
-                        <tr>
-                            <td>Network Status</td>
-                            <td id="networkStatus">Disconnected</td>
-                        </tr>
-                        <tr>
-                            <td>Connection Type</td>
-                            <td id="connectMode">No Service</td>
-                        </tr>
-                        <tr>
-                            <td>Connection Uptime</td>
-                           <!-- X Days X Hours X Mins-->
-                            <td id="connectionUptime">0 Min</td>
-                        </tr>
-                        <tr>
-                            <td>MAC Address</td>
-                            <td id="macAdress">Unknown</td>
-                        </tr>
-                        <tr>
-                            <td>IP Address</td>
-                            <td id="ipAddress">Unknown</td>
-                        </tr>
-                        <tr>
-                            <td>Subnet Mask</td>
-                            <td id="subnetMask">Unknown</td>
-                        </tr>
-                        <tr>
-                            <td>Default Gateway</td>
-                            <td id="defaultGateway">Unknown</td>
-                        </tr>
-                        <tr>
-                            <td>Primary DNS Server</td>
-                            <td id="primaryDNS">Unknown</td>
-                        </tr>
-                        <tr>
-                            <td>Secondary DNS Server</td>
-                            <td id="secondaryDNS">Unknown</td>
-                        </tr>
-                        <tr class="ipv6hide">
-                            <td>IPv6 Address</td>
-                            <td id="ipv6Address">Unknown</td>
-                        </tr>
-                        <tr class="ipv6hide">
-                            <td>IPv6 Primary DNS Server</td>
-                            <td id="ipv6primaryDNS">Unknown</td>
-                        </tr>
-                        <tr class="ipv6hide">
-                            <td>IPv6 Secondary DNS Server</td>
-                            <td id="ipv6secondaryDNS">Unknown</td>
-                        </tr>
-                    </table>
+                    <div class="table-wrapper">
+                        <table class="midDown_internet">
+                            <tr>
+                                <th width="270">Name</th>
+                                <th>Data</th>
+                            </tr>
+                            <tr>
+                                <td>Internet Mode</td>
+                                <td id="internetMode">Mobile Data</td>
+                            </tr>
+                            <tr>
+                                <td>Network Status</td>
+                                <td id="networkStatus">Disconnected</td>
+                            </tr>
+                            <tr>
+                                <td>Connection Type</td>
+                                <td id="connectMode">No Service</td>
+                            </tr>
+                            <tr>
+                                <td>Connection Uptime</td>
+                               <!-- X Days X Hours X Mins-->
+                                <td id="connectionUptime">0 Min</td>
+                            </tr>
+                            <tr>
+                                <td>MAC Address</td>
+                                <td id="macAdress">Unknown</td>
+                            </tr>
+                            <tr>
+                                <td>IP Address</td>
+                                <td id="ipAddress">Unknown</td>
+                            </tr>
+                            <tr>
+                                <td>Subnet Mask</td>
+                                <td id="subnetMask">Unknown</td>
+                            </tr>
+                            <tr>
+                                <td>Default Gateway</td>
+                                <td id="defaultGateway">Unknown</td>
+                            </tr>
+                            <tr>
+                                <td>Primary DNS Server</td>
+                                <td id="primaryDNS">Unknown</td>
+                            </tr>
+                            <tr>
+                                <td>Secondary DNS Server</td>
+                                <td id="secondaryDNS">Unknown</td>
+                            </tr>
+                            <tr class="ipv6hide">
+                                <td>IPv6 Address</td>
+                                <td id="ipv6Address">Unknown</td>
+                            </tr>
+                            <tr class="ipv6hide">
+                                <td>IPv6 Primary DNS Server</td>
+                                <td id="ipv6primaryDNS">Unknown</td>
+                            </tr>
+                            <tr class="ipv6hide">
+                                <td>IPv6 Secondary DNS Server</td>
+                                <td id="ipv6secondaryDNS">Unknown</td>
+                            </tr>
+                        </table>
+                    </div>
                 </div>
             </div>
-            <div id="wifi" class="hide">
+            <div id="wifi" class="tab-content hide">
                 <div class="mid3">
-                    <table class="midDown_i232s">
-                        <tr><th colspan="2"></th></tr>
-                        <tr>
-                            <td></td>
-                            <td id="enable24"></td>
-                        </tr>
-                        <tr>
-                            <td></td>
-                            <td><pre id="ssidname24"></pre></td>
-                        </tr>
-                        <tr>
-                            <td></td>
-                            <td><pre id="password24"></pre></td>
-                        </tr>
-                        <tr><th colspan="2"></th></tr>
-                        <tr>
-                            <td></td>
-                            <td id="enable5"></td>
-                        </tr>
-                        <tr>
-                            <td></td>
-                            <td><pre id="ssidname5"></pre></td>
-                        </tr>
-                        <tr>
-                            <td></td>
-                            <td><pre id="password5"></pre></td>
-                        </tr>
-                       <!-- <tr><th><script type="text/javascript">getText(str_home_ipv4_network)</script></th></tr>
-                        <tr>
-                            <td><script type="text/javascript">getText(str_home_mac_adress+common_colon)</script></td>
-                            <td id="mac"></td>
-                        </tr>
-                        <tr>
-                            <td><script type="text/javascript">getText(str_home_router_address+common_colon)</script></td>
-                            <td id="ipadress"></td>
-                        </tr>
-                        <tr>
-                            <td><script type="text/javascript">getText(str_home_subnet_mask+common_colon)</script></td>
-                            <td id="netmask"></td>
-                        </tr>-->
-                    </table>
+                    <div class="wifi-wrapper">
+                        <div id="main-title" class="main-title">
+                            <h1>WiFi 2.4GHz</h1>
+                        </div>
+                        <div class="table-wrapper">
+                            <table class="midDown_i232s">
+                                <tr>
+                                    <th>Name</th>
+                                    <th>Data</th>
+                                </tr>
+                                <tr>
+                                    <td>Status</td>
+                                    <td id="enable24">Enabled</td>
+                                </tr>
+                                <tr>
+                                    <td>WiFi Name(SSID)</td>
+                                    <td><pre id="ssidname24">4G-CPE-ECF3</pre></td>
+                                </tr>
+                                <tr>
+                                    <td>Password</td>
+                                    <td><pre id="password24">eBHHeg3d</pre></td>
+                                </tr>
+                            </table>
+                        </div>
+                    </div>
+                    <div class="wifi-wrapper">
+                        <div id="main-title" class="main-title">
+                            <h1>WiFi 5GHz</h1>
+                        </div>
+                        <div class="table-wrapper">
+                            <table class="midDown_i232s">
+                                <tr>
+                                    <th>Name</th>
+                                    <th>Data</th>
+                                </tr>
+                                <tr>
+                                    <td>Status</td>
+                                    <td id="enable5">Enabled</td>
+                                </tr>
+                                <tr>
+                                    <td>WiFi Name(SSID)</td>
+                                    <td><pre id="ssidname5">4G-CPE-ECF3</pre></td>
+                                </tr>
+                                <tr>
+                                    <td>Password</td>
+                                    <td><pre id="password5">eBHHeg3d</pre></td>
+                                </tr>
+                            </table>
+                        </div>
+                    </div>
                 </div>
             </div>
-            <div id="client" class="hide">
+            <div id="client" class="tab-content hide">
                 <div class="mid3">
-                    <table id="clients" class="midDown_connected">
-                       <!-- <tr>
-                            <td>
-                                <div class="desktop">
-                                    <table>
-                                        <tr><td colspan="2" class="desktopUp">DESKTOP-XXXXXXXX</td></tr>
-                                        <tr class="desktopDown">
-                                            <td>Dell</td>
-                                            <td>XXX.XXX.XXX.XXX</td>
-                                        </tr>
-                                    </table>
-                                </div>
-                                <div class="jeremy">
-                                    <table>
-                                        <tr><td colspan="2" class="jeremyUp">Jeremy PC</td></tr>
-                                        <tr class="jeremyDown">
-                                            <td>ASUS</td>
-                                            <td>XXX.XXX.XXX.XXX</td>
-                                        </tr>
-                                    </table>
-                                </div>
-                            </td>
-                        </tr>-->
-                    </table>
+                    <div class="table-wrapper">
+                        <table id="clients" class="midDown_connected">
+                            <tr>
+                                <th width="100">Index</th>
+                                <th width="250">Hostname</th>
+                                <th width="250">Mac</th>
+                                <th width="320">IP</th>
+                            </tr>
+                            <tr>
+                                <td>1</td>
+                                <td>Unknown</td>
+                                <td>74:4d:28:2a:d5:5f</td>
+                                <td>192.168.1.180</td>
+                            </tr>
+                            <tr>
+                                <td>2</td>
+                                <td>Unknown</td>
+                                <td>74:4d:28:2a:d5:5f</td>
+                                <td>192.168.1.23</td>
+                            </tr>
+                            <tr>
+                                <td>3</td>
+                                <td>Unknown</td>
+                                <td>74:4d:28:2a:d5:5f</td>
+                                <td>192.168.1.164</td>
+                            </tr>
+                         </table>
+                    </div>
                 </div>
             </div>
         </div>

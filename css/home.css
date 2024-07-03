@@ -1,3 +1,12 @@
+html::-webkit-scrollbar {
+  display: none;
+}
+
+/* Hide scrollbar for IE, Edge and Firefox */
+html {
+  -ms-overflow-style: none;  /* IE and Edge */
+  scrollbar-width: none;  /* Firefox */
+}
 .content-container{
     max-width: 970px;
     width: 100%;
@@ -45,22 +54,56 @@
 .midBigOnfocus .home-menu-icon svg path{
     color: #ffffff;
 }
-#internet, #wifi, #client {
+#internet, #client {
+    width: 100%;    
+}
+#wifi {
     width: 100%;
-    background-color: #fff;
-    box-shadow: 0px 2px 4px 0px rgba(0, 0, 0, 0.10);
+}
+#wifi .mid3 {
+    border: none;
+    display: flex;
+    flex-direction: column;
+    gap: 48px;
 }
 .mid3 {
     width: 100%;
+}
+.table-wrapper {
     border: 1px solid #E4E4E4;
     border-radius: 8px;
+    overflow: hidden;
+    box-shadow: 0px 2px 4px 0px rgba(0, 0, 0, 0.10);
 }
 .mid3 table {
     width: 100%;
     border-collapse: collapse;
 }
-.mid3 table td {
-    width: 50%;
+.mid3 table td, .mid3 table th {
     padding: 16px;
     border: 1px solid #E4E4E4;
+    text-align: left;
 } 
+.mid3 table th {
+    background-color: #f9f9f9;
+}
+.mid3 table td {
+    background-color: #ffffff;
+}
+.wifi-wrapper {
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+}
+#clients th:first-child, #clients td:first-child {
+    width: 100px;
+}
+#clients th:nth-child(2),
+ #clients th:nth-child(3),
+ #clients td:nth-child(2),
+ #clients td:nth-child(3) {
+    width: 250px;
+}
+#clients th:last-child, #clients td:last-child {
+    width: 320px;
+}
