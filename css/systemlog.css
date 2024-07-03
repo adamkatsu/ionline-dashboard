@@ -1,0 +1,13 @@
+.content-des img {
+    padding-top: 12px;
+}
+.select-status {
+     width: 200px;
+     font-size: 14px;
+ }
+.select-status option{
+    font-size: 14px;
+}
+.checkbox-status{
+    margin-right: 5px;
+}
