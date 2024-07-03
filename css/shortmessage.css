@@ -34,8 +34,10 @@
 .sms-menu-str, #boxmessage, #selected-num {
     color: #A3A3A4;
 }
-.sms-menu-str.sms-menu-active, .sms-menu-str.sms-menu-active > * {
-    color: #4D4D4F;
+.sms-menu-str.sms-menu-active {
+    color:#F69322}
+.sms-menu-str.sms-menu-active > * {
+    color: #F69322;
 }
 .sms-operator {
     display: flex;
@@ -50,7 +52,8 @@
 .sms-operator button {
     padding: 14px 16px;
     border-radius: 8px;
-    border: 1px solid #4D4D4F;
+    border: 1px solid #F69322;
+    color: #F69322;
     background: transparent;
     font-size: 14px;
     font-weight: 600;
@@ -75,6 +78,16 @@
 table, tr, th, td, table label {
     border-collapse: collapse;
     font-size: 14px;
+
+}
+th, td {
+    border: 1px solid #E4E4E4;
+}
+th:first-child, td:first-child {
+    border-right: none;
+}
+th:nth-child(2), td:nth-child(2) {
+    border-left: none;
 }
 table {
     width: 100%;
@@ -82,7 +95,6 @@ table {
     overflow: hidden;
 }
 tr {
-    border: 1px solid #E4E4E4;
     background-color: #fff;
 }
 table td, table th {
@@ -93,4 +105,29 @@ table td, table th {
 }
 #smsList_title.sms_read {
     background-color: #F8F8F8;
+}
+tr#smsList_title.sms-table-head {
+    background-color: #f9f9f9;
+}
+.sms_pagination {
+    position: relative;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
+.page_list {
+    position: absolute;
+    right: 16px;
+}
+.page_num {
+    color: #A3A3A4;
+}
+.page_current {
+    color: #F69322;
+}
+.page_tool {
+    display: flex;
+    flex-direction: row;
+    gap: 14px;
 }
