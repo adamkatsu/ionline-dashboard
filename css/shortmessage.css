@@ -1,0 +1,133 @@
+.content-container{
+    max-width: 970px;
+    margin: auto;
+    display: flex;
+    flex-direction: column;
+    gap: 48px;
+    justify-content: flex-start;
+    align-items: center;
+}
+.sms-right, #smssdiv {
+    width: 100%;
+}
+.sms-menu {
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+}
+#smssdiv {
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+}
+.childmenu ul{
+    display: flex;
+    flex-direction: row;
+    gap: 32px;
+    list-style: none;
+}
+.childmenu ul li {
+    cursor: pointer;
+}
+.sms-menu-str, #boxmessage, #selected-num {
+    color: #A3A3A4;
+}
+.sms-menu-str.sms-menu-active {
+    color:#F69322}
+.sms-menu-str.sms-menu-active > * {
+    color: #F69322;
+}
+.sms-operator {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    gap: 8px;
+}
+.box-message {
+    margin-right: 8px;
+}
+.sms-operator button {
+    padding: 14px 16px;
+    border-radius: 8px;
+    border: 1px solid #F69322;
+    color: #F69322;
+    background: transparent;
+    font-size: 14px;
+    font-weight: 600;
+    cursor: pointer;
+}
+#newmessge_button {
+    display: flex;
+    width: 100px;
+    padding: 14px 12px 14px 16px;
+    justify-content: center;
+    align-items: center;
+    gap: 5px;
+    background: #F69322;
+    color: #ffffff;
+    border: 1px solid #F69322;
+}
+#sms_data {
+    box-shadow: 0px 2px 4px 0px rgba(0, 0, 0, 0.10);
+    border: 1px solid #E4E4E4;
+    border-radius: 8px;
+}
+table, tr, th, td, table label {
+    border-collapse: collapse;
+    font-size: 14px;
+
+}
+th, td {
+    border: 1px solid #E4E4E4;
+}
+th:first-child, td:first-child {
+    border-right: none;
+}
+th:nth-child(2), td:nth-child(2) {
+    border-left: none;
+}
+table {
+    width: 100%;
+    border-radius: 8px;
+    overflow: hidden;
+}
+tr {
+    background-color: #fff;
+}
+table td, table th {
+    padding: 16px;
+}
+#smsList_title:has(input[type="checkbox"]:checked) {
+    background-color: #FFF7ED;
+}
+#smsList_title.sms_read {
+    background-color: #F8F8F8;
+}
+tr#smsList_title.sms-table-head {
+    background-color: #f9f9f9;
+}
+.sms_pagination {
+    position: relative;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
+.page_list {
+    position: absolute;
+    right: 16px;
+}
+.page_num {
+    color: #A3A3A4;
+}
+.page_current {
+    color: #F69322;
+}
+.page_tool {
+    display: flex;
+    flex-direction: row;
+    gap: 14px;
+}
