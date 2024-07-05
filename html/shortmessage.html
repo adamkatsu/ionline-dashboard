@@ -8,7 +8,7 @@
     <link rel="stylesheet" href="../css/global.css"/>
     <link rel="stylesheet" href="../css/header.css"/>
     <link rel="stylesheet" href="../css/shortmessage.css"/>
-    <script type="text/javascript" src="../lib/jquery-3.5.1.min.js"></script>
+    <!-- <script type="text/javascript" src="../lib/jquery-3.5.1.min.js"></script> -->
     <script type="text/javascript" src="../js/languagemanage.js"></script>
     <script type="text/javascript" src="../lib/json_parse.js"></script>
     <script type="text/javascript" src="../lib/json2.js"></script>
@@ -20,8 +20,71 @@
     <title></title>
 </head>
 <body>
-<div id="container" class="container">
-    <div id="header" class="header"></div>
+<div id="container" class="container sms-cont">
+    <div id="header" class="header">
+        <div id="common_header" class="common_header">
+            <div id="logo" class="logo">
+                <div class="header-logo_container">
+                    <img src="images/logo_black.png">
+                    <div class="header-action">
+                        <div class="bt_logout">
+                            <a id="logout" href="">Logout</a>
+                        </div>
+                        <div class="header-action_divider"></div>
+                        <select class="selectList" id="langid">
+                            <option value="english" selected>English</option>
+                            <option value="spanish">Spanish</option>
+                            <option value="arabic">Arabic</option>
+                        </select>
+                    </div>
+                </div>
+            </div>
+            <div class="tool">
+                <div class="header-tools_container">
+                    <div class="main-menu">
+                        <div class="bt_home header-menu_active" id="gotohome">
+                            <a id="home" href="common/home.html">Home</a>
+                        </div>
+                        <div class="bt_shortmessage" id="gotosms">
+                            <a id="shortmessage" href="html/shortmessage.html">SMS</a>
+                        </div>
+                        <div class="bt_settings" id="gotosetting">
+                            <a id="settings" href="html/deviceinfo.html">Settings</a>
+                        </div>
+                    </div>
+                    <div id="info" class="info">
+                        <ul class="info_ul">
+                            <li id="new" class="info-img">
+                                <img id="newimg" src="images/new/wireless.svg">
+                            </li>
+                            <li id="roam" class="info-img">
+                                <img id="roamimg" src="images/new/data_up_down.svg">
+                            </li>
+                            <li id="card-status" class="info-img" style="display: none;">
+                                <img id="cardimg" src="" style="display: none;">
+                            </li>
+                            <li id="netmode" class="info-img" style="display: none;">
+                                <img id="netmodeimg" src="" style="display: none;">
+                            </li>
+                            <li id="signal-simg" class="info-img">
+                                <img id="signalimg" src="images/new/signal.svg">
+                            </li>
+                            <li id="internet-mode" class="info-img" style="display: none;">
+                                <img id="cradleimg" src="" style="display: none;">
+                            </li>
+                            <li id="wifi-status" class="info-img" style="display: none;">
+                                <img id="wifiimg" src="" style="display: none;">
+                            </li>
+                            <li id="sms" class="info-img">
+                                <img id="smsimg" src="images/new/message.svg">
+                                <span id="sms_Num" class="sms_title">2</span>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
     <div id="content" class="content w-full">
         <div class="content-container">
             <div class="sms-right">

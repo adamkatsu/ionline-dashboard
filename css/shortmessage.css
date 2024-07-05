@@ -7,6 +7,9 @@
     justify-content: flex-start;
     align-items: center;
 }
+.sms-cont {
+    height: 100%;
+}
 .sms-right, #smssdiv {
     width: 100%;
 }
